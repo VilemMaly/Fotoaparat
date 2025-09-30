@@ -1,0 +1,16 @@
+.MC32829 :1 ;TACTILE SWITCH, SPST-NO, 0.05A, 12V, THD
+MC32829
+*STM S
+*NGS
+*PLB 1="1" 2="2" 3="3" 4="4"
+*MXP 4
+*DFN MC32829
+~!Farnell Part Number (-)
+~!Farnell Price/Stock (-)
+~!Manufacturer_Name (Multicomp Pro)
+~!Manufacturer_Part_Number (MC32829)
+~!Link Datasheet (-)
+~!Height (6mm)
+~!3D_Model (MC32829)
+MC32829
+1.1!U 2.1!U 3.1!U 4.1!U 

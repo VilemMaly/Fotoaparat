@@ -1,0 +1,17 @@
+.MFS201N-24-Z :1 ;SWITCH SLIDE DPDT 300MA 30V
+MFS201N24Z
+*STM S
+*NGS
+*PNM 1=1 2=2 3=3 4=4 5=5 6=6 7=MH1 8=MH2 9=MH3 10=MH4
+*PLB 1="NC_1" 2="COM_1" 3="NO_1" 4="NC_2" 5="COM_2" 6="NO_2" 7="MH1" 8="MH2" 9="MH3" 10="MH4"
+*MXP 10
+*DFN MFS201N-24-Z
+~!Farnell Part Number (-)
+~!Farnell Price/Stock (-)
+~!Manufacturer_Name (Nidec Copal)
+~!Manufacturer_Part_Number (MFS201N-24-Z)
+~!Link Datasheet (-)
+~!Height (4mm)
+~!3D_Model (MFS201N-24-Z)
+MFS201N-24-Z
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 

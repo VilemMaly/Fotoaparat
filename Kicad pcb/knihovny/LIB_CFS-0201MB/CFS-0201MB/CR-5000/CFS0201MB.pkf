@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "CFS0201MB"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "CFS0201MB")
+        (spec "default")
+    )
+)

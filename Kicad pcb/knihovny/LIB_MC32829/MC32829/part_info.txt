@@ -1,0 +1,9 @@
+Manufacturer=Multicomp Pro
+PartNumber=MC32829
+PartCategory=Switch
+PackageCategory=Other
+PinCount=4
+Version=3.2
+Released=2018-02-15 11:41:32
+Downloaded=2025-09-30 21:00:05
+3D=Y

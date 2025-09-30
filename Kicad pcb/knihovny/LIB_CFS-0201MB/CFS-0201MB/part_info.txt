@@ -1,0 +1,9 @@
+Manufacturer=Nidec Copal
+PartNumber=CFS-0201MB
+PartCategory=Switch
+PackageCategory=Other
+PinCount=4
+Version=1.4
+Released=2020-09-16 19:16:26
+Downloaded=2025-09-30 20:52:32
+3D=N

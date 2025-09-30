@@ -1,0 +1,9 @@
+Manufacturer=Molex
+PartNumber=47346-0001
+PartCategory=Connector
+PackageCategory=Other
+PinCount=11
+Version=2.2
+Released=2017-02-13 09:31:46
+Downloaded=2025-09-30 20:34:42
+3D=Y

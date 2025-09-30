@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'CFS_0201MB'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "FARNELL_PART_NUMBER", "FARNELL_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Nidec Copal", "CFS-0201MB" (!) = "", "CFS0201MB", "Other", "", "", "SWITCH DIP SPST 100MA 6V Gullwing", "https://www.nidec-copal-electronics.com/e/catalog/switch/cfs.pdf", "3.7 mm"
+END_PART
+
+END.

@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "MFS201N-24-Z"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2020-04-08-10:49:47)
+    (mountForm default
+        (footprintRef "MFS201N24Z")
+        (spec "System")
+    )
+)

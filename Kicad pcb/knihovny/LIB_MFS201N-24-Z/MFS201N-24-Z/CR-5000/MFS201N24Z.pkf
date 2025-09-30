@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "MFS201N24Z"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "MFS201N24Z")
+        (spec "default")
+    )
+)

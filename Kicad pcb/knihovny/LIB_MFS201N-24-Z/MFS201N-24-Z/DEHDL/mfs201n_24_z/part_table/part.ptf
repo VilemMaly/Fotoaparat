@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MFS201N_24_Z'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "FARNELL_PART_NUMBER", "FARNELL_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Nidec Copal", "MFS201N-24-Z" (!) = "", "MFS201N24Z", "Other", "", "", "SWITCH SLIDE DPDT 300MA 30V", "", "4 mm"
+END_PART
+
+END.
