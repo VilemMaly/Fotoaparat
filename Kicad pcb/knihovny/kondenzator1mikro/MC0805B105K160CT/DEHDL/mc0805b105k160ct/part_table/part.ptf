@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MC0805B105K160CT'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "FARNELL_PART_NUMBER", "FARNELL_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Multicomp Pro", "MC0805B105K160CT" (!) = "", "CAPC2012X135N", "Capacitor Chip Non-polarised", "", "", "MULTICOMP - MC0805B105K160CT - CAP, MLCC, X7R, 1UF, 16V, 0805, REEL", "", "1.35 mm"
+END_PART
+
+END.

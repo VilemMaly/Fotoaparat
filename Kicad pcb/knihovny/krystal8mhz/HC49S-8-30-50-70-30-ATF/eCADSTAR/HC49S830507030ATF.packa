@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "HC49S-8-30-50-70-30-ATF"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2024-01-26-03:26:36)
+    (mountForm default
+        (footprintRef "HC49S830507030ATF")
+        (spec "System")
+    )
+)

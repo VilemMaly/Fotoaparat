@@ -1,0 +1,9 @@
+Manufacturer=Multicomp Pro
+PartNumber=MC0805B105K160CT
+PartCategory=Capacitor
+PackageCategory=Capacitor Chip Non-polarised
+PinCount=2
+Version=2.1
+Released=2018-08-04 08:37:02
+Downloaded=2025-10-01 17:50:49
+3D=Y

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP GRM0335C1H300GA01D
+D Chip Capacitor value 300
+K
+F https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM0335C1H300GA01-01A.pdf
+$ENDCMP
+#
+#End Doc Library

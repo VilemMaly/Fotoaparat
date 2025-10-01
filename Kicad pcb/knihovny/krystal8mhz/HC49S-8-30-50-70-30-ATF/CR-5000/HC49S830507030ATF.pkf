@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "HC49S830507030ATF"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "HC49S830507030ATF")
+        (spec "default")
+    )
+)

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'GRM0335C1H300GA01D'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "FARNELL_PART_NUMBER", "FARNELL_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Murata Electronics", "GRM0335C1H300GA01D" (!) = "", "GRM033D70J224ME01D", "Other", "", "", "Chip Capacitor value 300", "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM0335C1H300GA01-01A.pdf", "0.33 mm"
+END_PART
+
+END.

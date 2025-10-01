@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MC0603B104K250CT'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "FARNELL_PART_NUMBER", "FARNELL_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Multicomp Pro", "MC0603B104K250CT" (!) = "", "CAPC1608X87N", "Capacitor Chip Non-polarised", "", "", "MULTICOMP - MC0603B104K250CT - CAP, MLCC, X7R, 100NF, 25V, 0603, REEL", "", "0.87 mm"
+END_PART
+
+END.

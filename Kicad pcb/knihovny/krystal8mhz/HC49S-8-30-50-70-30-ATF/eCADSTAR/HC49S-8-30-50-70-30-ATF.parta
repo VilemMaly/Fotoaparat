@@ -1,0 +1,66 @@
+(Japanese_coding: sjis)
+(function "ECS_3790808"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2024-01-26-03:26:36)
+    (utime 2024-01-26-06:25:22)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "HC49S-8-30-50-70-30-ATF")
+)
+
+
+(pinAssign "ECS_3790808"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2024-01-26-03:26:36)
+    (utime 2024-01-26-06:25:22)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_3790808")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "HC49S-8-30-50-70-30-ATF")
+)
+
+
+(part "HC49S-8-30-50-70-30-ATF"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2024-01-26-03:26:36)
+    (utime 2024-01-26-06:25:22)
+    (packageRef "HC49S-8-30-50-70-30-ATF")
+    (pinAssignRef "ECS_3790808")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "Y")
+    (property "description" "MULTICOMP PRO HC49S-8-30-50-70-30-ATFCrystal, 8 MHz, Through Hole, 10.9mm x 4.65mm, 50 ppm, 30 pF, 30 ppm, HC49S")
+    (property "Farnell_Part_Number" "")
+    (property "Farnell_Price/Stock" "")
+    (property "Manufacturer_Name" "Multicomp Pro")
+    (property "Manufacturer_Part_Number" "HC49S-8-30-50-70-30-ATF")
+    (property "Datasheet_Link" "")
+    (property "compAreaTopHeight" 4)
+)
+
+

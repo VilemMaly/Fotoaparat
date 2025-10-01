@@ -1,0 +1,9 @@
+Manufacturer=Murata Electronics
+PartNumber=GRM0335C1H300GA01D
+PartCategory=Capacitor
+PackageCategory=Other
+PinCount=2
+Version=4.2
+Released=2023-03-07 09:31:26
+Downloaded=2025-10-01 18:15:46
+3D=Y

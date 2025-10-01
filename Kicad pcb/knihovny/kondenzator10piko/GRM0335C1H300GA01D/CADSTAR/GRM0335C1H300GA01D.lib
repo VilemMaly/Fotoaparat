@@ -1,0 +1,16 @@
+.GRM0335C1H300GA01D :1 ;Chip Capacitor value 300
+GRM033D70J224ME01D
+*STM C
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN GRM0335C1H300GA01D
+~!Farnell Part Number (-)
+~!Farnell Price/Stock (-)
+~!Manufacturer_Name (Murata Electronics)
+~!Manufacturer_Part_Number (GRM0335C1H300GA01D)
+~!Link Datasheet (https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM0335C1H300GA01-01A.pdf)
+~!Height (0.33mm)
+~!3D_Model (GRM0335C1H300GA01D)
+GRM0335C1H300GA01D
+1.1!U 2.1!U 

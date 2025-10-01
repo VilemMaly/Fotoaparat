@@ -1,0 +1,16 @@
+.MC0603B104K250CT :1 ;MULTICOMP - MC0603B104K250CT - CAP, MLCC, X7R, 100NF, 25V, 0603, REEL
+CAPC1608X87N
+*STM C
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN MC0603B104K250CT
+~!Farnell Part Number (-)
+~!Farnell Price/Stock (-)
+~!Manufacturer_Name (Multicomp Pro)
+~!Manufacturer_Part_Number (MC0603B104K250CT)
+~!Link Datasheet (-)
+~!Height (0.87mm)
+~!3D_Model (MC0603B104K250CT)
+MC0603B104K250CT
+1.1!U 2.1!U 

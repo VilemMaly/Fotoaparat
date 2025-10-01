@@ -1,0 +1,16 @@
+.MC0805B105K160CT :1 ;MULTICOMP - MC0805B105K160CT - CAP, MLCC, X7R, 1UF, 16V, 0805, REEL
+CAPC2012X135N
+*STM C
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN MC0805B105K160CT
+~!Farnell Part Number (-)
+~!Farnell Price/Stock (-)
+~!Manufacturer_Name (Multicomp Pro)
+~!Manufacturer_Part_Number (MC0805B105K160CT)
+~!Link Datasheet (-)
+~!Height (1.35mm)
+~!3D_Model (MC0805B105K160CT)
+MC0805B105K160CT
+1.1!U 2.1!U 

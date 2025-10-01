@@ -1,0 +1,130 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "HC49S-8-30-50-70-30-ATF"
+   (description "MULTICOMP PRO HC49S-8-30-50-70-30-ATFCrystal, 8 MHz, Through Hole, 10.9mm x 4.65mm, 50 ppm, 30 pF, 30 ppm, HC49S")
+   (family "OSC")
+   (package "HC49S830507030ATF")
+   (attribute "Datasheet Link" "")
+   (attribute "Geometry.Height" "4mm")
+   (attribute "Farnell Part Number" "")
+   (attribute "Farnell Price/Stock" "")
+   (attribute "Manufacturer_Name" "Multicomp Pro")
+   (attribute "Manufacturer_Part_Number" "HC49S-8-30-50-70-30-ATF")
+   (gate
+    (symbol "HC49S-8-30-50-70-30-ATF")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+   )
+  )
+  (symbol "HC49S-8-30-50-70-30-ATF"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 120 100) (pt 120 -100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 280 100) (pt 280 -100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 160 140) (pt 160 -140) (pt 240 -140) (pt 240 140) (pt 160 140) (closed))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 280 0) (pt 300 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 120 0) (pt 100 0))
+   )
+   (terminal
+    (body (symbol "PINSHORT") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 140 10) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 60 10) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PINSHORT") (pt 400 0) (rot 0) (mir X) (visible true))
+    (name (pt 140 10) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 60 10) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "HC49S830507030ATF"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.325 -3.01)
+      (pt 2.325 -3.01)
+      (pt 2.325 7.89)
+      (pt -2.325 7.89)
+      (pt -2.325 -3.01))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.325 8.89)
+      (pt 3.325 8.89)
+      (pt 3.325 -4.01)
+      (pt -3.325 -4.01)
+      (pt -3.325 8.89))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -2.325 7.89)
+      (pt 2.325 7.89)
+      (pt 2.325 -3.01)
+      (pt -2.325 -3.01)
+      (pt -2.325 7.89))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3 0)
+      (arc (pt -3.000 0.000) (pt -3.000 -0.050) (pt -2.900 0.050) (start 180.0) (sweep -180.0))
+      (pt -2.9 0)
+      (arc (pt -2.900 0.000) (pt -3.000 -0.050) (pt -2.900 0.050) (start 180.0) (sweep .0))
+      (pt -3 0))))
+   (leg 1 (pt 0.000 0.000) (padstack 0))
+   (leg 2 (pt 0.000 4.880) (padstack 2))
+   (padstack 0
+    (hole 0.65)
+    (plated true)
+    (pad (layer TCOP) (square 1.192))
+    (pad (layer INNER) (round 1.192))
+    (pad (layer BCOP) (square 1.192))
+   )
+   (padstack 2
+    (hole 0.65)
+    (plated true)
+    (pad (layer TCOP) (round 1.192))
+    (pad (layer INNER) (round 1.192))
+    (pad (layer BCOP) (round 1.192))
+   )
+   (model "HC49S-8-30-50-70-30-ATF.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model HC49S-8-30-50-70-30-ATF
+#/3790808/1784014/2.50/2/2/Crystal or Oscillator
+DEF HC49S-8-30-50-70-30-ATF Y 0 30 Y Y 1 F N
+F0 "Y" 350 250 50 H V L CNN
+F1 "HC49S-8-30-50-70-30-ATF" 350 150 50 H V L CNN
+F2 "HC49S830507030ATF" 350 50 50 H I L CNN
+F3 "" 350 -50 50 H I L CNN
+F4 "MULTICOMP PRO HC49S-8-30-50-70-30-ATFCrystal, 8 MHz, Through Hole, 10.9mm x 4.65mm, 50 ppm, 30 pF, 30 ppm, HC49S" 350 -150 50 H I L CNN "Description"
+F5 "4" 350 -250 50 H I L CNN "Height"
+F6 "" 350 -350 50 H I L CNN "Farnell Part Number"
+F7 "" 350 -450 50 H I L CNN "Farnell Price/Stock"
+F8 "Multicomp Pro" 350 -550 50 H I L CNN "Manufacturer_Name"
+F9 "HC49S-8-30-50-70-30-ATF" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 400 0 100 L 50 50 0 0 P
+P 2 0 1 6 120 100 120 -100 N
+P 2 0 1 6 280 100 280 -100 N
+P 5 0 1 6 160 140 160 -140 240 -140 240 140 160 140 N
+P 2 0 1 6 280 0 300 0 N
+P 2 0 1 6 120 0 100 0 N
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1635,7 +1635,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_02x09_Counter_Clockwise"
+		(symbol "Connector:Conn_01x02_Socket"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -1644,15 +1644,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 1.27 12.7 0)
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_02x09_Counter_Clockwise"
-				(at 1.27 -12.7 0)
+			(property "Value" "Conn_01x02_Socket"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1677,7 +1677,421 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, double row, 02x09, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, single row, 01x02, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_Socket_1_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.508)
+					(mid -0.5058 0)
+					(end 0 0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -3.048)
+					(mid -0.5058 -2.54)
+					(end 0 -2.032)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector:Conn_01x04_Socket"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x04_Socket"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x04, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x04_Socket_1_1"
+				(polyline
+					(pts
+						(xy -1.27 2.54) (xy -0.508 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -5.08) (xy -0.508 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 2.032)
+					(mid -0.5058 2.54)
+					(end 0 3.048)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.508)
+					(mid -0.5058 0)
+					(end 0 0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -3.048)
+					(mid -0.5058 -2.54)
+					(end 0 -2.032)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -5.588)
+					(mid -0.5058 -5.08)
+					(end 0 -4.572)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector_Generic:Conn_02x11_Odd_Even"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 1.27 15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_02x11_Odd_Even"
+				(at 1.27 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, double row, 02x11, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1704,16 +2118,27 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_02x09_Counter_Clockwise_1_1"
+			(symbol "Conn_02x11_Odd_Even_1_1"
 				(rectangle
-					(start -1.27 11.43)
-					(end 3.81 -11.43)
+					(start -1.27 13.97)
+					(end 3.81 -13.97)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 12.827)
+					(end 0 12.573)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(rectangle
@@ -1807,6 +2232,28 @@
 				(rectangle
 					(start -1.27 -10.033)
 					(end 0 -10.287)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -12.573)
+					(end 0 -12.827)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 12.827)
+					(end 2.54 12.573)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -1914,8 +2361,19 @@
 						(type none)
 					)
 				)
+				(rectangle
+					(start 3.81 -12.573)
+					(end 2.54 -12.827)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
-					(at -5.08 10.16 0)
+					(at -5.08 12.7 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -1933,25 +2391,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 7.62 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 5.08 0)
+					(at -5.08 10.16 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -1969,25 +2409,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 7.62 0)
 					(length 3.81)
 					(name "Pin_5"
 						(effects
@@ -2005,25 +2427,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -5.08 0)
+					(at -5.08 5.08 0)
 					(length 3.81)
 					(name "Pin_7"
 						(effects
@@ -2041,25 +2445,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -7.62 0)
-					(length 3.81)
-					(name "Pin_8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -10.16 0)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_9"
 						(effects
@@ -2077,133 +2463,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 10.16 180)
-					(length 3.81)
-					(name "Pin_18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 7.62 180)
-					(length 3.81)
-					(name "Pin_17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 5.08 180)
-					(length 3.81)
-					(name "Pin_16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 3.81)
-					(name "Pin_15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 0 180)
-					(length 3.81)
-					(name "Pin_14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 3.81)
-					(name "Pin_13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -5.08 180)
-					(length 3.81)
-					(name "Pin_12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -7.62 180)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_11"
 						(effects
@@ -2221,7 +2481,169 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 -10.16 180)
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 3.81)
+					(name "Pin_17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -10.16 0)
+					(length 3.81)
+					(name "Pin_19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -12.7 0)
+					(length 3.81)
+					(name "Pin_21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 12.7 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 10.16 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 7.62 180)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 5.08 180)
+					(length 3.81)
+					(name "Pin_8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
 					(length 3.81)
 					(name "Pin_10"
 						(effects
@@ -2231,6 +2653,114 @@
 						)
 					)
 					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "Pin_12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 3.81)
+					(name "Pin_14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -5.08 180)
+					(length 3.81)
+					(name "Pin_16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -7.62 180)
+					(length 3.81)
+					(name "Pin_18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -10.16 180)
+					(length 3.81)
+					(name "Pin_20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -12.7 180)
+					(length 3.81)
+					(name "Pin_22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2854,6 +3384,785 @@
 						(effects
 							(font
 								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "GRM0335C1H300GA01D:GRM0335C1H300GA01D"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 8.89 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "GRM0335C1H300GA01D"
+				(at 8.89 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "GRM033D70J224ME01D"
+				(at 8.89 -96.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM0335C1H300GA01-01A.pdf"
+				(at 8.89 -196.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Chip Capacitor value 300"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "0.33"
+				(at 8.89 -396.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Farnell Part Number" ""
+				(at 8.89 -496.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Farnell Price/Stock" ""
+				(at 8.89 -596.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Murata Electronics"
+				(at 8.89 -696.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "GRM0335C1H300GA01D"
+				(at 8.89 -796.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "GRM0335C1H300GA01D_1_1"
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 5.588 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.588 2.54) (xy 5.588 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.112 2.54) (xy 7.112 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.112 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "HC49S-8-30-50-70-30-ATF:HC49S-8-30-50-70-30-ATF"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Y"
+				(at 8.89 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "HC49S-8-30-50-70-30-ATF"
+				(at 8.89 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "HC49S830507030ATF"
+				(at 8.89 -96.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 8.89 -196.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "MULTICOMP PRO HC49S-8-30-50-70-30-ATFCrystal, 8 MHz, Through Hole, 10.9mm x 4.65mm, 50 ppm, 30 pF, 30 ppm, HC49S"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "4"
+				(at 8.89 -396.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Farnell Part Number" ""
+				(at 8.89 -496.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Farnell Price/Stock" ""
+				(at 8.89 -596.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Multicomp Pro"
+				(at 8.89 -696.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "HC49S-8-30-50-70-30-ATF"
+				(at 8.89 -796.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "HC49S-8-30-50-70-30-ATF_1_1"
+				(polyline
+					(pts
+						(xy 3.048 2.54) (xy 3.048 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.048 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 4.064 3.556)
+					(end 6.096 -3.556)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.112 2.54) (xy 7.112 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.112 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MC0603B104K250CT:MC0603B104K250CT"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 8.89 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "MC0603B104K250CT"
+				(at 8.89 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "CAPC1608X87N"
+				(at 8.89 -96.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 8.89 -196.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "MULTICOMP - MC0603B104K250CT - CAP, MLCC, X7R, 100NF, 25V, 0603, REEL"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "0.87"
+				(at 8.89 -396.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Farnell Part Number" ""
+				(at 8.89 -496.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Farnell Price/Stock" ""
+				(at 8.89 -596.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Multicomp Pro"
+				(at 8.89 -696.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "MC0603B104K250CT"
+				(at 8.89 -796.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "MC0603B104K250CT_1_1"
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 5.588 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.588 2.54) (xy 5.588 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.112 2.54) (xy 7.112 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.112 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MC0805B105K160CT:MC0805B105K160CT"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 8.89 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "MC0805B105K160CT"
+				(at 8.89 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "CAPC2012X135N"
+				(at 8.89 -96.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 8.89 -196.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "MULTICOMP - MC0805B105K160CT - CAP, MLCC, X7R, 1UF, 16V, 0805, REEL"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "1.35"
+				(at 8.89 -396.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Farnell Part Number" ""
+				(at 8.89 -496.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Farnell Price/Stock" ""
+				(at 8.89 -596.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Multicomp Pro"
+				(at 8.89 -696.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "MC0805B105K160CT"
+				(at 8.89 -796.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "MC0805B105K160CT_1_1"
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 5.588 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.588 2.54) (xy 5.588 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.112 2.54) (xy 7.112 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.112 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -5242,10 +6551,64 @@
 		)
 	)
 	(junction
-		(at 104.14 96.52)
+		(at 22.86 20.32)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "13a4d0ba-3079-4528-8169-b840189d5d84")
+		(uuid "05e7f089-3020-47ca-8f1f-9ae18de95511")
+	)
+	(junction
+		(at 88.9 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08de6187-335e-4ac9-ba85-f300e4d3b448")
+	)
+	(junction
+		(at 88.9 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c82f7bd-3e76-4115-9e94-330430a6c0e7")
+	)
+	(junction
+		(at 115.57 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1daa3d4b-a4cc-4ad0-9cf8-b876994888b9")
+	)
+	(junction
+		(at 58.42 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2029ce42-bdaf-421e-bf6e-11f75b3a864f")
+	)
+	(junction
+		(at 11.43 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2088f698-f7bb-4997-b51f-ccc88b76c7cd")
+	)
+	(junction
+		(at 110.49 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3a994018-ebc9-4a98-83d2-c5ca856d5cf7")
+	)
+	(junction
+		(at 58.42 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "446368fc-39b8-4fdf-a43c-142950d3f699")
+	)
+	(junction
+		(at 110.49 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4a90d5af-a3ff-4fa2-b6db-28be1f709414")
+	)
+	(junction
+		(at 185.42 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5dae968d-a4bf-46a5-bda9-db0e03581f7b")
 	)
 	(junction
 		(at 55.88 138.43)
@@ -5254,16 +6617,148 @@
 		(uuid "60c07167-d87b-4c40-9ce8-6961bd8e5916")
 	)
 	(junction
+		(at 22.86 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "671fa9da-9db0-4ff5-b2a7-799ac04a0e79")
+	)
+	(junction
+		(at 53.34 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "71f89175-3cd5-4d21-8eee-95123c9424ba")
+	)
+	(junction
+		(at 22.86 5.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "74398ae5-12cd-4698-adbd-ca8bb4dd76c4")
+	)
+	(junction
+		(at 110.49 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a24110e-3b90-44e7-bc3d-d0fb58cb2242")
+	)
+	(junction
+		(at 22.86 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a9760914-bf27-4e93-a1fc-2bb0a4f72b2a")
+	)
+	(junction
+		(at 118.11 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa6363b1-87ad-4644-8de3-c070e179901b")
+	)
+	(junction
+		(at 55.88 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ab1cc2cc-da8e-42f1-8214-3a27075c0d1c")
+	)
+	(junction
+		(at 58.42 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "abf1456f-98cc-4365-bf02-5af2b27b9f0e")
+	)
+	(junction
+		(at 81.28 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aec5d752-51ca-4fb6-8a0a-6b64884143dd")
+	)
+	(junction
+		(at 60.96 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1afdc4e-d2d2-4ec7-ae64-74c74acbe163")
+	)
+	(junction
+		(at 88.9 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b863b134-edfb-4755-9e75-c60d3dea64e3")
+	)
+	(junction
+		(at 78.74 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bdac7d62-7fdd-464b-9c76-2b1bd4e70b6a")
+	)
+	(junction
+		(at 80.01 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf6075d0-7f8e-41e9-9775-a10851826c15")
+	)
+	(junction
+		(at 55.88 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c02d971c-19ec-4f85-b284-3eda460765af")
+	)
+	(junction
+		(at 88.9 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca818ad8-8fd7-4e3c-ba92-47a99a71ab7f")
+	)
+	(junction
 		(at 82.55 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d1dbe910-ab4d-404b-96ae-ff3da5945d3a")
 	)
 	(junction
-		(at 110.49 124.46)
+		(at 58.42 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ff86480e-208a-49a9-8bdd-4579e6dc3e56")
+		(uuid "d384707d-b361-4592-8320-450f86ad1466")
+	)
+	(junction
+		(at 106.68 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ddcbcaee-6b23-45db-98cf-e8215d2b9e5d")
+	)
+	(junction
+		(at 1.27 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e146b24a-e2e9-41cb-b332-d4ad0b671ae5")
+	)
+	(junction
+		(at 22.86 12.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e480218c-6fec-455c-84ee-d76fbfa26ded")
+	)
+	(junction
+		(at 60.96 5.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "efb74cf7-e042-4929-9b5f-808eeba9165f")
+	)
+	(junction
+		(at 139.7 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f37e04f6-e5a2-4cfc-b04a-7a533a2f3aec")
+	)
+	(junction
+		(at 138.43 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f45f92db-c5d5-436f-beb1-041815ed907f")
+	)
+	(junction
+		(at 22.86 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f9a8ac83-f7bc-466a-8036-b823cf66b381")
 	)
 	(no_connect
 		(at 151.13 105.41)
@@ -5271,73 +6766,388 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 96.52) (xy 104.14 67.31)
+			(xy 115.57 176.53) (xy 115.57 166.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0853f552-b11a-429d-99d3-05166b39dd08")
+		(uuid "00bbc1ac-3da3-4007-90f4-b0d2d26373fa")
 	)
 	(wire
 		(pts
-			(xy 92.71 129.54) (xy 92.71 96.52)
+			(xy 19.05 87.63) (xy 38.1 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "13c493bf-fe79-4302-b85d-69fe9c0251df")
+		(uuid "03ade9ef-a100-43bd-a6f3-5beaeeb1b0c2")
 	)
 	(wire
 		(pts
-			(xy 110.49 124.46) (xy 110.49 123.19)
+			(xy 167.64 85.09) (xy 170.18 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "18343784-4581-4404-9e29-fa3fe8d98b4b")
+		(uuid "0430db2e-7451-4558-9572-6e5adcbc013c")
 	)
 	(wire
 		(pts
-			(xy 83.82 22.86) (xy 33.02 22.86)
+			(xy 55.88 35.56) (xy 55.88 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
+		)
+		(uuid "04b466f9-983e-4f5e-b2d2-c86dff134efb")
+	)
+	(wire
+		(pts
+			(xy 167.64 77.47) (xy 171.45 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05be9bca-3741-4265-b57b-4a6bb88b18ab")
+	)
+	(wire
+		(pts
+			(xy 58.42 27.94) (xy 60.96 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0867fd4d-bc14-486c-b7c4-6c9c5d98c6d3")
+	)
+	(wire
+		(pts
+			(xy 171.45 77.47) (xy 171.45 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0954ab93-24e8-454a-b4eb-93bd5f5bde29")
+	)
+	(wire
+		(pts
+			(xy 22.86 5.08) (xy 22.86 12.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09d6b940-9249-4c01-930e-1be95f860dfa")
+	)
+	(wire
+		(pts
+			(xy 88.9 69.85) (xy 88.9 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "0a0108d4-a995-48d1-aefa-e759f371f776")
+	)
+	(wire
+		(pts
+			(xy 86.36 168.91) (xy 86.36 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a5f31e2-8c6b-43e8-8253-adca357fd9ef")
+	)
+	(wire
+		(pts
+			(xy -5.08 50.8) (xy 1.27 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fba8fa9-9a95-49af-ad28-fb4cc958cd48")
+	)
+	(wire
+		(pts
+			(xy 121.92 179.07) (xy 85.09 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1065d077-b3f1-45fb-b81b-634b098f12f1")
+	)
+	(wire
+		(pts
+			(xy 82.55 143.51) (xy 95.25 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 8 0 255 1)
+		)
+		(uuid "10e71ce6-c27c-49e9-8350-579d22cb14ec")
+	)
+	(wire
+		(pts
+			(xy 77.47 72.39) (xy 73.66 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10ee6fef-dd6f-4336-998a-33509a61c0fe")
+	)
+	(wire
+		(pts
+			(xy 22.86 12.7) (xy 22.86 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "118635c6-4b79-4579-9732-e8becc921cc2")
+	)
+	(wire
+		(pts
+			(xy 53.34 31.75) (xy 55.88 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15a05923-a3db-4684-9862-4f90c91a4b1f")
+	)
+	(wire
+		(pts
+			(xy 154.94 97.79) (xy 154.94 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16d73bcf-04fe-4209-b292-6f2619f8c37a")
+	)
+	(wire
+		(pts
+			(xy 22.86 -3.81) (xy 22.86 5.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "187605fb-29ec-407f-8557-aaf91440bf63")
+	)
+	(wire
+		(pts
+			(xy 16.51 151.13) (xy 16.51 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18a71d7e-1fd0-4ea2-9b9d-c262dc8e9dfc")
+	)
+	(wire
+		(pts
+			(xy 16.51 80.01) (xy 38.1 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d9be875-bc0d-4126-b329-a304106bc714")
+	)
+	(wire
+		(pts
+			(xy 33.02 22.86) (xy 83.82 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 21 0 255 1)
 		)
 		(uuid "20640bb4-8bda-45b8-a968-56b369cb4cee")
 	)
 	(wire
 		(pts
-			(xy 88.9 67.31) (xy 88.9 31.75)
+			(xy 121.92 156.21) (xy 81.28 156.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "22769faf-7e19-486e-b11d-e93d255f3538")
+		(uuid "210863b7-f5e0-43e5-976d-7fc168950492")
 	)
 	(wire
 		(pts
-			(xy 104.14 67.31) (xy 88.9 67.31)
+			(xy 77.47 124.46) (xy 77.47 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
+		)
+		(uuid "225b9c2b-7d32-4c66-87fc-ff605cb82446")
+	)
+	(wire
+		(pts
+			(xy 115.57 153.67) (xy 121.92 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22f34038-2bee-4f7b-b7a2-767d3f7de247")
+	)
+	(wire
+		(pts
+			(xy 100.33 39.37) (xy 88.9 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 5 1)
 		)
 		(uuid "23699760-cd93-4f75-8a1b-ed90579a5b42")
 	)
 	(wire
 		(pts
-			(xy 110.49 129.54) (xy 110.49 124.46)
+			(xy 22.86 33.02) (xy 22.86 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
+		(uuid "251550fe-fd38-487a-b91a-018d11c9c765")
+	)
+	(wire
+		(pts
+			(xy 115.57 166.37) (xy 88.9 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2709ecfc-aeea-497d-aaf5-6aec010d63f1")
+	)
+	(wire
+		(pts
+			(xy 76.2 127) (xy 76.2 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27b1c83d-a260-42f4-a521-bd0f698e8e70")
+	)
+	(wire
+		(pts
+			(xy 88.9 166.37) (xy 88.9 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27c74d97-b230-4d2e-8107-7b2b215ac170")
+	)
+	(wire
+		(pts
+			(xy 167.64 80.01) (xy 176.53 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29608ff9-5878-4d97-ad91-6ee15993b429")
+	)
+	(wire
+		(pts
+			(xy 73.66 52.07) (xy 106.68 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b18d0e0-a01e-45a8-9ac7-37dcfdeb5e1e")
+	)
+	(wire
+		(pts
+			(xy 139.7 49.53) (xy 88.9 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cd1ea03-5acb-40a8-8aa1-288afd624090")
+	)
+	(wire
+		(pts
+			(xy 191.77 104.14) (xy 191.77 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dffb9be-e432-4a6f-80ac-fa19d2a3334b")
+	)
+	(wire
+		(pts
+			(xy -1.27 33.02) (xy -5.08 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fb4436b-cffc-47a8-8bdd-f5e80e1dea4a")
+	)
+	(wire
+		(pts
+			(xy 147.32 82.55) (xy 147.32 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30641a80-b06e-4810-bff7-db48db42010c")
+	)
+	(wire
+		(pts
+			(xy 118.11 39.37) (xy 118.11 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 1 255 1)
+		)
 		(uuid "311bc136-c44e-4487-b3d1-bb99cabd9e33")
+	)
+	(wire
+		(pts
+			(xy 80.01 92.71) (xy 92.71 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "333e5b35-5916-45da-a9a7-20fa137418df")
+	)
+	(wire
+		(pts
+			(xy 78.74 97.79) (xy 92.71 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38653321-f5ae-4a5a-8e5f-a1b70e77b10f")
 	)
 	(wire
 		(pts
@@ -5346,28 +7156,223 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 8 0 255 1)
 		)
 		(uuid "3925a4d2-73f1-4d10-a51c-b0042a9d32b3")
 	)
 	(wire
 		(pts
-			(xy 92.71 96.52) (xy 104.14 96.52)
+			(xy 22.86 31.75) (xy 22.86 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "41ae330b-19a1-487e-b8f2-5228f9bbdf77")
+		(uuid "3973b093-c873-4563-9d71-ce76370add52")
 	)
 	(wire
 		(pts
-			(xy 58.42 31.75) (xy 58.42 39.37)
+			(xy 81.28 156.21) (xy 81.28 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
+		(uuid "39a61c77-bab5-493b-8183-c1b7720878f1")
+	)
+	(wire
+		(pts
+			(xy 170.18 85.09) (xy 170.18 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b379426-460b-472d-bb50-6d4f814d2e83")
+	)
+	(wire
+		(pts
+			(xy 97.79 82.55) (xy 97.79 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c6f5f7b-d4f5-49bd-8462-282c298d7c75")
+	)
+	(wire
+		(pts
+			(xy 8.89 195.58) (xy 8.89 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ca13d72-fd2a-4ae0-a367-039cf7671110")
+	)
+	(wire
+		(pts
+			(xy 55.88 31.75) (xy 55.88 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d61b8f3-afef-4d57-b15a-f943393fb0dc")
+	)
+	(wire
+		(pts
+			(xy 154.94 90.17) (xy 139.7 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f088738-28b4-485a-af49-807e8c640356")
+	)
+	(wire
+		(pts
+			(xy 88.9 31.75) (xy 88.9 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "408beaee-6748-48ce-bc8c-e8fd2f127048")
+	)
+	(wire
+		(pts
+			(xy 81.28 88.9) (xy 81.28 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41654cd7-1670-4ea9-82d1-020408ffdbb0")
+	)
+	(wire
+		(pts
+			(xy 187.96 72.39) (xy 185.42 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 44 44 44 1)
+		)
+		(uuid "4382cbb1-7483-433b-b70c-4768a1c2f878")
+	)
+	(wire
+		(pts
+			(xy 58.42 31.75) (xy 58.42 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
 		(uuid "44811025-cd55-46cc-9753-b23c2f7f007a")
+	)
+	(wire
+		(pts
+			(xy 149.86 139.7) (xy 25.4 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "450ae96a-8c8e-4f99-9f74-20b744c7b18a")
+	)
+	(wire
+		(pts
+			(xy 73.66 82.55) (xy 97.79 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "454b1dd8-df2d-4af4-b6dc-ee6a8b754455")
+	)
+	(wire
+		(pts
+			(xy 167.64 82.55) (xy 172.72 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47242c65-e9d3-4f98-be8f-d18c890d71d7")
+	)
+	(wire
+		(pts
+			(xy 106.68 69.85) (xy 88.9 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "480e24c4-87fa-492e-91a1-c6d58193c07d")
+	)
+	(wire
+		(pts
+			(xy 73.66 80.01) (xy 100.33 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a7b6ed4-b23e-4198-b18e-e722416b32f3")
+	)
+	(wire
+		(pts
+			(xy 154.94 72.39) (xy 154.94 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b5132ca-f5d2-4954-91fa-268964a76026")
+	)
+	(wire
+		(pts
+			(xy 154.94 82.55) (xy 147.32 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bf4004b-e24f-4b49-946a-dbad62d57b4f")
+	)
+	(wire
+		(pts
+			(xy 35.56 12.7) (xy 58.42 12.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "517d29ac-de97-4cb5-a327-d526695c143f")
+	)
+	(wire
+		(pts
+			(xy 189.23 92.71) (xy 189.23 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "531719f7-13c3-483a-b5e9-1438cbcb6bfb")
+	)
+	(wire
+		(pts
+			(xy 132.08 124.46) (xy 77.47 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55855d3e-2217-4d9d-99af-0904f8413f3e")
 	)
 	(wire
 		(pts
@@ -5376,28 +7381,73 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 8 0 255 1)
 		)
 		(uuid "57c1b366-4a1b-4423-b099-db8ba22684fe")
 	)
 	(wire
 		(pts
-			(xy 83.82 123.19) (xy 83.82 22.86)
+			(xy 83.82 22.86) (xy 83.82 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
+			(color 8 0 255 1)
 		)
 		(uuid "58eb028d-b94d-463e-83b7-97de2c0fecaa")
 	)
 	(wire
 		(pts
-			(xy 110.49 123.19) (xy 83.82 123.19)
+			(xy 110.49 138.43) (xy 106.68 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 41 41 41 1)
+		)
+		(uuid "5934504c-b84b-4452-9ba8-dd7ca226bcfa")
+	)
+	(wire
+		(pts
+			(xy 83.82 123.19) (xy 118.11 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 13 0 255 1)
+		)
+		(uuid "5947f276-5986-4f5d-849b-ccdd187c55b6")
+	)
+	(wire
+		(pts
+			(xy 88.9 49.53) (xy 88.9 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "59b5e8dc-e0db-4a31-a0a0-c88e7fb97c4c")
+	)
+	(wire
+		(pts
+			(xy 100.33 74.93) (xy 106.68 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5947f276-5986-4f5d-849b-ccdd187c55b6")
+		(uuid "5a68ba29-65a1-48df-ace4-d610aa6e00c7")
+	)
+	(wire
+		(pts
+			(xy 176.53 110.49) (xy 73.66 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a9d2f10-2424-4df1-bd35-9339a44322af")
 	)
 	(wire
 		(pts
@@ -5406,8 +7456,190 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 48 48 48 1)
 		)
 		(uuid "5ab314d6-cc64-4f15-aeb9-c1b8ccae831a")
+	)
+	(wire
+		(pts
+			(xy 77.47 123.19) (xy 73.66 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ac3657e-9637-43b8-ae73-c129b0fab646")
+	)
+	(wire
+		(pts
+			(xy 58.42 27.94) (xy 58.42 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b0268f3-5a8e-4765-8d77-d2ffc54f1801")
+	)
+	(wire
+		(pts
+			(xy 11.43 40.64) (xy 22.86 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b6290f8-3fff-4f4a-8760-5a27af4f0ba3")
+	)
+	(wire
+		(pts
+			(xy 95.25 31.75) (xy 88.9 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "5b84c4b0-bd86-407d-9ced-08b53dfb1ad6")
+	)
+	(wire
+		(pts
+			(xy 53.34 31.75) (xy 53.34 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bc7c12b-35cf-4cfa-89b9-0d4bb6a59dea")
+	)
+	(wire
+		(pts
+			(xy 170.18 146.05) (xy 19.05 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ca36d29-45f6-4281-afb0-b5a18db07ca4")
+	)
+	(wire
+		(pts
+			(xy 35.56 31.75) (xy 53.34 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62e04ac5-f37e-42f6-b5c9-561f19332d39")
+	)
+	(wire
+		(pts
+			(xy 86.36 132.08) (xy 80.01 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6302b85a-8da1-4d5e-9282-b281771d6390")
+	)
+	(wire
+		(pts
+			(xy 152.4 87.63) (xy 152.4 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64686210-7847-487b-8edd-a0938af39e8e")
+	)
+	(wire
+		(pts
+			(xy 144.78 80.01) (xy 144.78 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "648ba490-7fcd-4c6a-b906-56cd61b5c799")
+	)
+	(wire
+		(pts
+			(xy 60.96 5.08) (xy 35.56 5.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65c81176-f99a-4222-acdd-27b900278fd5")
+	)
+	(wire
+		(pts
+			(xy 85.09 179.07) (xy 85.09 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "663d1bab-6bc1-42aa-a631-4e96b1a7b4b1")
+	)
+	(wire
+		(pts
+			(xy 181.61 74.93) (xy 181.61 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67db3522-4c2e-4281-a028-a12da83e56b3")
+	)
+	(wire
+		(pts
+			(xy 105.41 54.61) (xy 105.41 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68131f5b-919f-4804-b2d1-387e50f09722")
+	)
+	(wire
+		(pts
+			(xy 78.74 133.35) (xy 78.74 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "682d912f-190d-42d8-be71-aefd5b97eeb2")
+	)
+	(wire
+		(pts
+			(xy 154.94 85.09) (xy 149.86 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68b06ae8-800b-4fdd-956c-cc86f6e62da3")
+	)
+	(wire
+		(pts
+			(xy 60.96 39.37) (xy 60.96 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c8ef70d-af41-491d-a0cd-1b42dac14ec7")
+	)
+	(wire
+		(pts
+			(xy 60.96 5.08) (xy 60.96 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d07a2a8-d797-4e68-b946-e22987fe7664")
 	)
 	(wire
 		(pts
@@ -5416,8 +7648,273 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 21 0 255 1)
 		)
 		(uuid "6f4991af-6353-4ebc-b3ba-9226af8f8530")
+	)
+	(wire
+		(pts
+			(xy 110.49 88.9) (xy 110.49 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 44 44 44 1)
+		)
+		(uuid "6f8bc391-0ccc-407e-a96f-69b755762a8c")
+	)
+	(wire
+		(pts
+			(xy 144.78 113.03) (xy 73.66 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7079862f-52f0-40dd-9be2-4cca3dd1e1b5")
+	)
+	(wire
+		(pts
+			(xy 38.1 54.61) (xy 1.27 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70a43e72-db88-4394-a081-051108de6d00")
+	)
+	(wire
+		(pts
+			(xy 88.9 49.53) (xy 88.9 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71d2b154-7c32-4450-b7f5-e984eadea9e8")
+	)
+	(wire
+		(pts
+			(xy 231.14 104.14) (xy 191.77 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71daa618-2d08-4b55-ba2c-5f04748a1189")
+	)
+	(wire
+		(pts
+			(xy 167.64 95.25) (xy 187.96 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 44 44 44 1)
+		)
+		(uuid "734528d8-fc32-4bf1-9607-324b3342caba")
+	)
+	(wire
+		(pts
+			(xy 80.01 92.71) (xy 80.01 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "791769d5-f530-49da-b6ef-15218b0231b6")
+	)
+	(wire
+		(pts
+			(xy 132.08 74.93) (xy 132.08 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79306c54-47ac-42a7-b375-fc1944de1c19")
+	)
+	(wire
+		(pts
+			(xy 77.47 121.92) (xy 77.47 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7939c45c-3ced-43fd-856a-c8744c72cf1c")
+	)
+	(wire
+		(pts
+			(xy 185.42 72.39) (xy 185.42 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 41 41 41 1)
+		)
+		(uuid "7a00e896-1905-4c66-b659-52fd891965ad")
+	)
+	(wire
+		(pts
+			(xy 35.56 20.32) (xy 55.88 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7aa3963c-2184-4592-8f16-c5c6656d2f86")
+	)
+	(wire
+		(pts
+			(xy 115.57 166.37) (xy 115.57 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7df98cf5-bacc-4a6f-a40a-2d63d02039e9")
+	)
+	(wire
+		(pts
+			(xy 106.68 52.07) (xy 106.68 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f88bc71-e479-4f2d-acca-32c98a48dc58")
+	)
+	(wire
+		(pts
+			(xy 29.21 95.25) (xy 38.1 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f9ba910-489e-4efe-b4f7-236cd4ca5c08")
+	)
+	(wire
+		(pts
+			(xy 38.1 52.07) (xy 11.43 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8060aeed-64dc-4e49-a3e0-8f01b57d002a")
+	)
+	(wire
+		(pts
+			(xy 29.21 140.97) (xy 29.21 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "833597a6-8584-49a4-8ba0-49e1ba1e26af")
+	)
+	(wire
+		(pts
+			(xy 22.86 138.43) (xy 55.88 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 41 41 41 1)
+		)
+		(uuid "837ab51d-94fd-4b9f-91ca-1e9b1d1174a6")
+	)
+	(wire
+		(pts
+			(xy 191.77 78.74) (xy 212.09 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83aa5070-32b4-4f37-b6e2-9ebcb2938afb")
+	)
+	(wire
+		(pts
+			(xy 100.33 80.01) (xy 100.33 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8835244a-73fc-4deb-9614-f3419dfe2e18")
+	)
+	(wire
+		(pts
+			(xy 115.57 166.37) (xy 121.92 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8899478d-7077-41dc-ab02-06b84450d0eb")
+	)
+	(wire
+		(pts
+			(xy 81.28 67.31) (xy 73.66 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88c5bc05-8498-458a-815e-cc285986f24a")
+	)
+	(wire
+		(pts
+			(xy -5.08 33.02) (xy -5.08 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89e954a7-430c-493f-9b5b-44290d2d5d14")
+	)
+	(wire
+		(pts
+			(xy 25.4 139.7) (xy 25.4 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89f6846d-d64e-41cb-9a1a-e7e6bb4986d4")
+	)
+	(wire
+		(pts
+			(xy 73.66 54.61) (xy 105.41 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c888680-cb8e-4c97-9021-4248c58a1a11")
+	)
+	(wire
+		(pts
+			(xy 11.43 44.45) (xy 11.43 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cb4a744-d896-4c26-b5a0-d2ceed676d76")
+	)
+	(wire
+		(pts
+			(xy 121.92 168.91) (xy 86.36 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cc3605c-2d8f-40d1-b82f-c369188f16a6")
 	)
 	(wire
 		(pts
@@ -5426,18 +7923,69 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 41 41 41 1)
 		)
 		(uuid "8f1e1b9f-b396-4ed6-ac4e-f8b3730e879e")
 	)
 	(wire
 		(pts
-			(xy 104.14 114.3) (xy 104.14 96.52)
+			(xy 73.66 59.69) (xy 78.74 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "98167b6e-636c-468e-ba27-d4123a06594a")
+		(uuid "92ad4e0f-3df9-4c89-b0d8-f354c3aa1065")
+	)
+	(wire
+		(pts
+			(xy 142.24 107.95) (xy 73.66 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92c43bc4-2c37-49d7-9aac-cf37153028bd")
+	)
+	(wire
+		(pts
+			(xy 171.45 57.15) (xy 73.66 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92ce8076-ee6e-4b7d-b23f-cea3ead24830")
+	)
+	(wire
+		(pts
+			(xy 97.79 72.39) (xy 106.68 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95c330de-fbee-4a94-8d19-a58983c5e6d0")
+	)
+	(wire
+		(pts
+			(xy 152.4 121.92) (xy 77.47 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96ad37b2-e5a0-4de9-9c42-f0ee91c676e5")
+	)
+	(wire
+		(pts
+			(xy 85.09 133.35) (xy 78.74 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a0e100c-50a4-4b01-a76b-16894da7fddf")
 	)
 	(wire
 		(pts
@@ -5446,18 +7994,234 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 21 0 255 1)
 		)
 		(uuid "9b013df5-82e9-487c-9c84-929d7ef71946")
 	)
 	(wire
 		(pts
-			(xy 134.62 116.84) (xy 134.62 124.46)
+			(xy 76.2 125.73) (xy 73.66 125.73)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
+		(uuid "9ba60869-1f77-4b0c-9303-c21c4b2e97c5")
+	)
+	(wire
+		(pts
+			(xy 139.7 90.17) (xy 139.7 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bcb2633-5b1f-44bf-a179-128bf5d1d47b")
+	)
+	(wire
+		(pts
+			(xy 11.43 33.02) (xy 22.86 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c5ed4f1-d776-4c49-b4fa-44389e45d513")
+	)
+	(wire
+		(pts
+			(xy 149.86 85.09) (xy 149.86 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c67c8ae-5961-4a6c-b966-cb67c2061c52")
+	)
+	(wire
+		(pts
+			(xy 17.78 142.24) (xy 17.78 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cb9d86d-e611-48a4-9752-c38184ef4913")
+	)
+	(wire
+		(pts
+			(xy 81.28 88.9) (xy 92.71 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f8e9098-8a5f-4b05-a852-2e81d4ebee70")
+	)
+	(wire
+		(pts
+			(xy 185.42 138.43) (xy 138.43 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 41 41 41 1)
+		)
+		(uuid "a06269e4-bd5c-4238-baf4-9984c955ac01")
+	)
+	(wire
+		(pts
+			(xy 167.64 72.39) (xy 185.42 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 41 41 41 1)
+		)
+		(uuid "a1d08f35-1673-4fdc-948d-44a33186a990")
+	)
+	(wire
+		(pts
+			(xy 58.42 135.89) (xy 58.42 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 41 41 41 1)
+		)
+		(uuid "a71b50e2-bca7-41f3-9fe9-33bde1075b67")
+	)
+	(wire
+		(pts
+			(xy 125.73 34.29) (xy 125.73 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 13 0 255 1)
+		)
 		(uuid "a9534ba0-14c4-4d46-8ffc-066d1446fb91")
+	)
+	(wire
+		(pts
+			(xy 154.94 195.58) (xy 8.89 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a974fc0e-6af6-4860-94d6-d7fd1b8b0281")
+	)
+	(wire
+		(pts
+			(xy 55.88 20.32) (xy 55.88 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab243f6d-c452-4c61-8f86-c3112ec17e81")
+	)
+	(wire
+		(pts
+			(xy 58.42 138.43) (xy 55.88 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 41 41 41 1)
+		)
+		(uuid "ad582342-fe53-4f27-844b-1918f4e0fdb9")
+	)
+	(wire
+		(pts
+			(xy 154.94 80.01) (xy 144.78 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae19fca6-8d95-4ec4-8c5f-9e801f4f1887")
+	)
+	(wire
+		(pts
+			(xy 134.62 142.24) (xy 17.78 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae3e4b3a-4a2c-4234-a660-e59e8f13ec26")
+	)
+	(wire
+		(pts
+			(xy 1.27 54.61) (xy 1.27 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae8a4e43-afe0-451e-a8c1-f343ac70f2fa")
+	)
+	(wire
+		(pts
+			(xy 134.62 95.25) (xy 134.62 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1885548-e8ca-4d00-9555-ed3ada52d882")
+	)
+	(wire
+		(pts
+			(xy -1.27 44.45) (xy 11.43 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b75322cc-77cd-4d1c-8b4f-4e2eac4faa6b")
+	)
+	(wire
+		(pts
+			(xy 167.64 97.79) (xy 186.69 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7c0ed2f-ed89-408f-9501-b0c710eab02a")
+	)
+	(wire
+		(pts
+			(xy 13.97 77.47) (xy 38.1 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b94af4dd-00dd-4841-b4f8-f0aa2d383ba2")
+	)
+	(wire
+		(pts
+			(xy 147.32 105.41) (xy 73.66 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba025417-923b-44a3-971c-241d5f0fa8a9")
+	)
+	(wire
+		(pts
+			(xy 22.86 40.64) (xy 22.86 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbd8b9cc-1fce-4c3e-9d05-657a12debb81")
 	)
 	(wire
 		(pts
@@ -5466,8 +8230,50 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 8 0 255 1)
 		)
 		(uuid "bdf67a12-c480-4cda-af79-f6e2d1356bbc")
+	)
+	(wire
+		(pts
+			(xy 176.53 80.01) (xy 176.53 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be6e26d2-38a3-40ca-9cf3-32a456720a72")
+	)
+	(wire
+		(pts
+			(xy 110.49 97.79) (xy 110.49 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 44 44 44 1)
+		)
+		(uuid "bee66aa8-964e-4a4a-a2e9-078beba05b78")
+	)
+	(wire
+		(pts
+			(xy 58.42 12.7) (xy 58.42 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "befa3629-32b9-4b4e-872e-38b86aa5489d")
+	)
+	(wire
+		(pts
+			(xy 167.64 87.63) (xy 171.45 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0993752-7bf4-430e-a45a-c068a278da71")
 	)
 	(wire
 		(pts
@@ -5476,6 +8282,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 8 0 255 1)
 		)
 		(uuid "c196aa84-c0ec-4685-a4cd-289b68467225")
 	)
@@ -5486,8 +8293,29 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 0 1)
 		)
 		(uuid "c4f3a4a4-544d-4653-83ba-9e824fe73342")
+	)
+	(wire
+		(pts
+			(xy 134.62 95.25) (xy 154.94 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c59da8eb-502b-4126-acba-7a2c7c219451")
+	)
+	(wire
+		(pts
+			(xy -1.27 40.64) (xy -1.27 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8383b14-3477-4190-8757-24167f0a7ea5")
 	)
 	(wire
 		(pts
@@ -5496,72 +8324,443 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 8 0 255 1)
 		)
 		(uuid "c9e114eb-4d4c-427d-95ba-4b1e7f138d89")
 	)
 	(wire
 		(pts
-			(xy 138.43 138.43) (xy 55.88 138.43)
+			(xy 138.43 138.43) (xy 110.49 138.43)
 		)
 		(stroke
 			(width 0)
 			(type default)
+			(color 41 41 41 1)
 		)
 		(uuid "ca9b3cc2-d8d2-45dc-ab39-7d407e6f5b19")
 	)
 	(wire
 		(pts
-			(xy 134.62 114.3) (xy 138.43 114.3)
+			(xy 21.59 82.55) (xy 38.1 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
+		)
+		(uuid "ccc44a7f-1f0b-4345-b5cb-abf92b97fd21")
+	)
+	(wire
+		(pts
+			(xy 125.73 31.75) (xy 138.43 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 44 44 44 1)
 		)
 		(uuid "cf516e4c-66ff-45eb-96f2-bc79c8e40f2a")
 	)
 	(wire
 		(pts
-			(xy 138.43 114.3) (xy 138.43 138.43)
+			(xy 60.96 -3.81) (xy 35.56 -3.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
+		)
+		(uuid "d0345bc0-780e-4848-92f6-3be5e2c9075f")
+	)
+	(wire
+		(pts
+			(xy 8.89 72.39) (xy 38.1 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d14766ee-1263-4166-9722-4061f2521668")
+	)
+	(wire
+		(pts
+			(xy 171.45 87.63) (xy 171.45 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2d20f89-8319-4f7c-ba6f-ee03ec4ff8ab")
+	)
+	(wire
+		(pts
+			(xy 189.23 151.13) (xy 16.51 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d32bdc0d-e019-4bf4-ada5-963b843eb84f")
+	)
+	(wire
+		(pts
+			(xy 106.68 77.47) (xy 106.68 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 44 44 44 1)
+		)
+		(uuid "d4aab24b-9755-48bf-b63c-6933b7d368a4")
+	)
+	(wire
+		(pts
+			(xy 172.72 140.97) (xy 29.21 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9272b05-9c66-4836-bf1f-c95432040b45")
+	)
+	(wire
+		(pts
+			(xy 181.61 127) (xy 76.2 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9a7fb5a-b996-4501-8e0c-26d3b8897eae")
+	)
+	(wire
+		(pts
+			(xy 154.94 49.53) (xy 139.7 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da4a268b-73e6-4c55-9894-8bf9b8132541")
+	)
+	(wire
+		(pts
+			(xy 142.24 77.47) (xy 142.24 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc2f3729-4049-467e-99f5-36f2a9ee97b4")
+	)
+	(wire
+		(pts
+			(xy 13.97 149.86) (xy 13.97 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc5363bb-0b51-4d28-a8f3-987a6c9e0170")
+	)
+	(wire
+		(pts
+			(xy 121.92 176.53) (xy 115.57 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd0d8843-7e75-469d-bc58-3c930808cc06")
+	)
+	(wire
+		(pts
+			(xy 154.94 77.47) (xy 142.24 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddb90d78-ef0d-4158-b165-40a4572e08ab")
+	)
+	(wire
+		(pts
+			(xy 105.41 66.04) (xy 106.68 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de758263-b4b6-43d0-a7c7-9ba3570bd908")
+	)
+	(wire
+		(pts
+			(xy 11.43 52.07) (xy 11.43 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e193c258-a31c-471f-b079-214a3490e798")
+	)
+	(wire
+		(pts
+			(xy 21.59 144.78) (xy 21.59 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1c0b2ec-2b03-4dbd-b215-6f4dd6f400a4")
+	)
+	(wire
+		(pts
+			(xy 78.74 59.69) (xy 78.74 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2890384-a940-44cf-a303-aebcce1ea09f")
+	)
+	(wire
+		(pts
+			(xy 172.72 82.55) (xy 172.72 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e30742bb-40a9-4481-82d1-1955b09fd69f")
+	)
+	(wire
+		(pts
+			(xy 167.64 92.71) (xy 189.23 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3080d8b-7184-4bb3-bb4c-f468a3e92165")
+	)
+	(wire
+		(pts
+			(xy 138.43 31.75) (xy 138.43 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 44 44 44 1)
 		)
 		(uuid "e340ed55-a062-4b6e-8633-c0411c994457")
 	)
 	(wire
 		(pts
-			(xy 110.49 124.46) (xy 134.62 124.46)
+			(xy 125.73 123.19) (xy 118.11 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
+			(color 13 0 255 1)
 		)
 		(uuid "e7388a1d-1bac-4373-b78c-70f01bf1def2")
 	)
 	(wire
 		(pts
-			(xy 82.55 116.84) (xy 82.55 143.51)
+			(xy 167.64 74.93) (xy 181.61 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fae70ded-8b3a-4ef6-a279-c40b45e881e3")
+		(uuid "ea522fa1-7119-4bef-9ee9-264e60229597")
 	)
 	(wire
 		(pts
-			(xy 104.14 116.84) (xy 82.55 116.84)
+			(xy 187.96 95.25) (xy 187.96 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 44 44 44 1)
+		)
+		(uuid "eaba80e0-d572-4c45-b0d0-c094e5ffbd44")
+	)
+	(wire
+		(pts
+			(xy 154.94 87.63) (xy 152.4 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "faf8cf84-7262-46e5-b3e3-48379da2ab9f")
+		(uuid "ec99aa71-ec0f-49f7-ad37-14b058c3d886")
+	)
+	(wire
+		(pts
+			(xy 186.69 97.79) (xy 186.69 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecc9d78e-73e1-4ad2-a9d4-9466e1194eab")
+	)
+	(wire
+		(pts
+			(xy 95.25 34.29) (xy 95.25 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 8 0 255 1)
+		)
+		(uuid "ef97977b-321a-4d02-b87a-e23c86695cf5")
+	)
+	(wire
+		(pts
+			(xy 106.68 138.43) (xy 58.42 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 41 41 41 1)
+		)
+		(uuid "f0866ade-c1ff-441c-9a7a-efb8abd57b41")
+	)
+	(wire
+		(pts
+			(xy 80.01 132.08) (xy 80.01 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2f1f262-1f31-451f-8e97-a632e16ca5bd")
+	)
+	(wire
+		(pts
+			(xy 58.42 35.56) (xy 58.42 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "f3ee7df9-4f6c-40fa-89d9-6a87f361f9a4")
+	)
+	(wire
+		(pts
+			(xy 154.94 74.93) (xy 132.08 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f41fb3ba-8328-4655-98a0-d43bd24f51e1")
+	)
+	(wire
+		(pts
+			(xy 17.78 74.93) (xy 38.1 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f42cd532-e9b8-4c54-b228-862e7bce0de8")
+	)
+	(wire
+		(pts
+			(xy 55.88 35.56) (xy 58.42 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f42d1ab5-e177-4c74-aee6-af5a436efbed")
+	)
+	(wire
+		(pts
+			(xy 186.69 149.86) (xy 13.97 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5c40f46-c8ae-40da-8c7b-ceb754f1c3d7")
+	)
+	(wire
+		(pts
+			(xy 110.49 92.71) (xy 110.49 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 44 44 44 1)
+		)
+		(uuid "f7818fe5-cc22-48ab-90b6-c4ed1e30e0e3")
+	)
+	(wire
+		(pts
+			(xy 22.86 20.32) (xy 22.86 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f80c3fcd-59a9-4070-8d09-4b027c4a9dc8")
+	)
+	(wire
+		(pts
+			(xy 25.4 90.17) (xy 38.1 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f815bd61-71a4-444e-bb32-1eee9dd9e3f4")
+	)
+	(wire
+		(pts
+			(xy 19.05 146.05) (xy 19.05 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa306b08-a8e1-44b7-9f6a-3d708736203d")
+	)
+	(wire
+		(pts
+			(xy 171.45 144.78) (xy 21.59 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa37ff7d-9387-4cec-81ce-d28fbbe93807")
+	)
+	(wire
+		(pts
+			(xy 73.66 69.85) (xy 80.01 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb775b7e-963e-4e94-8df7-e69abd0cdc32")
+	)
+	(wire
+		(pts
+			(xy 60.96 5.08) (xy 60.96 -3.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe7430d9-e8dc-4981-a8f6-e5d0ba6d5972")
 	)
 	(symbol
 		(lib_id "MFS201N-24-Z:MFS201N-24-Z")
-		(at 143.51 130.81 0)
+		(at 237.49 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5570,7 +8769,7 @@
 		(fields_autoplaced yes)
 		(uuid "18cfa65b-92b0-409d-a4b9-7fca841afccb")
 		(property "Reference" "S1"
-			(at 158.75 123.19 0)
+			(at 252.73 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5578,15 +8777,15 @@
 			)
 		)
 		(property "Value" "MFS201N-24-Z"
-			(at 158.75 125.73 0)
+			(at 252.73 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "MFS201N24Z"
-			(at 170.18 225.73 0)
+		(property "Footprint" "mfs:MFS201N24Z"
+			(at 264.16 211.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5596,7 +8795,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 170.18 325.73 0)
+			(at 264.16 311.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5606,7 +8805,7 @@
 			)
 		)
 		(property "Description" "SWITCH SLIDE DPDT 300MA 30V"
-			(at 143.51 130.81 0)
+			(at 237.49 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5615,7 +8814,7 @@
 			)
 		)
 		(property "Height" "4"
-			(at 170.18 525.73 0)
+			(at 264.16 511.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5625,7 +8824,7 @@
 			)
 		)
 		(property "Farnell Part Number" ""
-			(at 170.18 625.73 0)
+			(at 264.16 611.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5635,7 +8834,7 @@
 			)
 		)
 		(property "Farnell Price/Stock" ""
-			(at 170.18 725.73 0)
+			(at 264.16 711.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5645,7 +8844,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Nidec Copal"
-			(at 170.18 825.73 0)
+			(at 264.16 811.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5655,7 +8854,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "MFS201N-24-Z"
-			(at 170.18 925.73 0)
+			(at 264.16 911.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5698,6 +8897,254 @@
 			(project ""
 				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
 					(reference "S1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x11_Odd_Even")
+		(at 160.02 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d51e50c-d023-4da5-8932-7f90e7b3da79")
+		(property "Reference" "J7"
+			(at 161.29 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Kamera"
+			(at 161.29 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x11_P2.54mm_Vertical"
+			(at 160.02 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x11, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 160.02 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73a7462c-9dd3-4145-89fc-cb20cd9feda8")
+		)
+		(pin "2"
+			(uuid "05c4d1ee-e27d-4616-b7b3-c1592530087b")
+		)
+		(pin "15"
+			(uuid "c77f9be2-3a2b-465f-9c8f-e8fc4b999f34")
+		)
+		(pin "10"
+			(uuid "e03f1a93-20fe-434c-8365-0ba2594c9304")
+		)
+		(pin "20"
+			(uuid "b279d344-bf21-475e-834f-cfb3e2fe6cb7")
+		)
+		(pin "5"
+			(uuid "081dd858-ad1e-4dd2-96a3-e99f6d6cf6bc")
+		)
+		(pin "6"
+			(uuid "77cebe96-bd16-4bca-aab7-1cf936bf6f7f")
+		)
+		(pin "4"
+			(uuid "a9f83a7f-b557-4e17-a08d-8b575f92a99a")
+		)
+		(pin "18"
+			(uuid "9f474821-19b6-422a-b496-235d3a971b64")
+		)
+		(pin "14"
+			(uuid "c7d9e2ff-5734-4ccc-b200-c968174e1665")
+		)
+		(pin "3"
+			(uuid "01e4dc4c-8d1b-41a2-862f-efadf5b2e2bb")
+		)
+		(pin "16"
+			(uuid "8703ff46-6ba7-4acc-8e40-f6396942acfb")
+		)
+		(pin "21"
+			(uuid "4dee1576-315f-48be-a512-f4f1bdda5424")
+		)
+		(pin "17"
+			(uuid "433b6916-85b3-439f-b6a0-c4afcff78d87")
+		)
+		(pin "19"
+			(uuid "cc7a6490-cd91-4d6d-8cf4-dc907bb47ae7")
+		)
+		(pin "12"
+			(uuid "021a4476-173c-4ef7-aab4-37f43830702e")
+		)
+		(pin "8"
+			(uuid "ae6d35d7-118d-466e-a837-d0b3d588a89a")
+		)
+		(pin "7"
+			(uuid "5393e05a-56be-437b-8f4c-29f32e1d877a")
+		)
+		(pin "9"
+			(uuid "ab230cf8-bfe1-4121-ae9b-b539f0ac9043")
+		)
+		(pin "11"
+			(uuid "eccee6b7-ebba-462a-9bf3-4e873e298434")
+		)
+		(pin "13"
+			(uuid "db42dea1-13d1-464b-9c52-97e2d0882a6b")
+		)
+		(pin "22"
+			(uuid "d364fc6e-c483-4cf4-9f65-b91d1a7e473a")
+		)
+		(instances
+			(project ""
+				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MC0603B104K250CT:MC0603B104K250CT")
+		(at 22.86 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33312672-c0cc-4f9b-9bd1-408b90488438")
+		(property "Reference" "C2"
+			(at 29.21 12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MC0603B104K250CT"
+			(at 29.21 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mc06:CAPC1608X87N"
+			(at 31.75 116.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 216.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "MULTICOMP - MC0603B104K250CT - CAP, MLCC, X7R, 100NF, 25V, 0603, REEL"
+			(at 22.86 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.87"
+			(at 31.75 416.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Part Number" ""
+			(at 31.75 516.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Price/Stock" ""
+			(at 31.75 616.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Multicomp Pro"
+			(at 31.75 716.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MC0603B104K250CT"
+			(at 31.75 816.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9aff3b6f-a1a9-4f27-8fd5-67b49e02b01f")
+		)
+		(pin "1"
+			(uuid "6040d2bc-061e-41f4-a7d3-a2bab9447c18")
+		)
+		(instances
+			(project "fotoaparat"
+				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -5962,7 +9409,7 @@
 	)
 	(symbol
 		(lib_id "2025-09-30_19-14-30:GSD090012SEU")
-		(at 90.17 143.51 0)
+		(at 34.29 166.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5971,7 +9418,7 @@
 		(fields_autoplaced yes)
 		(uuid "418a3b02-3db4-4a7f-ba8d-47d39074bee2")
 		(property "Reference" "J5"
-			(at 113.03 133.35 0)
+			(at 57.15 156.21 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -5979,15 +9426,15 @@
 			)
 		)
 		(property "Value" "Sd Karta"
-			(at 113.03 135.89 0)
+			(at 57.15 158.75 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "GSD090012SEU_AMP"
-			(at 90.17 143.51 0)
+		(property "Footprint" "gsd09:GSD090012SEU_AMP"
+			(at 34.29 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5997,7 +9444,7 @@
 			)
 		)
 		(property "Datasheet" "GSD090012SEU"
-			(at 90.17 143.51 0)
+			(at 34.29 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6007,7 +9454,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 90.17 143.51 0)
+			(at 34.29 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6070,124 +9517,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_02x09_Counter_Clockwise")
-		(at 181.61 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5c78d3c4-ddf9-4b08-92fe-b5ff0c8895a6")
-		(property "Reference" "J4"
-			(at 182.88 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Kamera"
-			(at 182.88 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x09_P2.54mm_Vertical_SMD"
-			(at 181.61 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 181.61 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, double row, 02x09, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 181.61 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "2b4f4e27-3162-4443-a76c-b31a6554f4af")
-		)
-		(pin "11"
-			(uuid "e02487c7-73b0-49e3-9b93-aa6c9aab1727")
-		)
-		(pin "2"
-			(uuid "a2feb6c5-b4b2-4515-9ab3-7ad54d49f69b")
-		)
-		(pin "1"
-			(uuid "7305a391-1c0b-4b25-b367-4d66bdafb722")
-		)
-		(pin "7"
-			(uuid "65949f6f-3a8f-4dbd-aa4d-2e57aff7f48c")
-		)
-		(pin "6"
-			(uuid "96863cdd-d934-4fb5-a456-1df228a80fa6")
-		)
-		(pin "5"
-			(uuid "94e82982-5858-4b1b-b4d2-a4c9f1274432")
-		)
-		(pin "15"
-			(uuid "1ed630c5-36ad-4128-ab5d-f763a35d8b8a")
-		)
-		(pin "8"
-			(uuid "e623a2bd-906b-496c-b3ef-a0f5675f720e")
-		)
-		(pin "9"
-			(uuid "996df218-45af-4306-98cb-ea2cac5d849c")
-		)
-		(pin "10"
-			(uuid "645182d4-c394-4192-90a4-705d0e279781")
-		)
-		(pin "13"
-			(uuid "afcfa5e9-3821-40b9-a351-d7c1b1e2ce24")
-		)
-		(pin "18"
-			(uuid "c4a76eb7-f5d5-4482-8733-6b93a2642ca1")
-		)
-		(pin "17"
-			(uuid "0a3492bb-5b50-4043-8f10-26215eed45d1")
-		)
-		(pin "16"
-			(uuid "ac7150e3-2d94-420f-a6a6-d1453187d77c")
-		)
-		(pin "14"
-			(uuid "1c37dc16-c924-48db-8f14-ea54b04ea019")
-		)
-		(pin "3"
-			(uuid "72eb8e11-af06-45f9-a866-3d93610179b4")
-		)
-		(pin "4"
-			(uuid "91575191-e860-49f6-a089-48cad55cab44")
-		)
-		(instances
-			(project ""
-				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "MC32829:MC32829")
-		(at 109.22 95.25 0)
+		(at 121.92 176.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6196,7 +9527,7 @@
 		(fields_autoplaced yes)
 		(uuid "611f87cf-a80d-467a-ab7d-b80240cb3a4d")
 		(property "Reference" "S4"
-			(at 119.38 87.63 0)
+			(at 132.08 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6204,15 +9535,15 @@
 			)
 		)
 		(property "Value" "MC32829"
-			(at 119.38 90.17 0)
+			(at 132.08 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "MC32829"
-			(at 125.73 190.17 0)
+		(property "Footprint" "mc3:MC32829"
+			(at 138.43 271.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6222,7 +9553,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 290.17 0)
+			(at 138.43 371.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6232,7 +9563,7 @@
 			)
 		)
 		(property "Description" "TACTILE SWITCH, SPST-NO, 0.05A, 12V, THD"
-			(at 109.22 95.25 0)
+			(at 121.92 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6241,7 +9572,7 @@
 			)
 		)
 		(property "Height" "6"
-			(at 125.73 490.17 0)
+			(at 138.43 571.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6251,7 +9582,7 @@
 			)
 		)
 		(property "Farnell Part Number" ""
-			(at 125.73 590.17 0)
+			(at 138.43 671.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6261,7 +9592,7 @@
 			)
 		)
 		(property "Farnell Price/Stock" ""
-			(at 125.73 690.17 0)
+			(at 138.43 771.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6271,7 +9602,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Multicomp Pro"
-			(at 125.73 790.17 0)
+			(at 138.43 871.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6281,7 +9612,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "MC32829"
-			(at 125.73 890.17 0)
+			(at 138.43 971.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6337,7 +9668,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RESC2012X55N"
+		(property "Footprint" "2012:RESC2012X55N"
 			(at 69.85 244.78 0)
 			(effects
 				(font
@@ -6432,8 +9763,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 111.76 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6b4982b6-81e7-4077-8070-62cbb2f14606")
+		(property "Reference" "J2"
+			(at 113.03 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SWD"
+			(at 113.03 74.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 111.76 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 111.76 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "86461cb8-b57a-4646-be2e-5e316b7011fe")
+		)
+		(pin "4"
+			(uuid "639996d2-3794-4062-b1ee-29177f28b907")
+		)
+		(pin "2"
+			(uuid "0cf97558-0257-45a1-9390-61b8c00c6892")
+		)
+		(pin "1"
+			(uuid "27165cd0-9a2d-4172-b981-097a655b8397")
+		)
+		(instances
+			(project ""
+				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "FFC2A32-20-T:FFC2A32-20-T")
-		(at 114.3 39.37 0)
+		(at 196.85 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6442,7 +9849,7 @@
 		(fields_autoplaced yes)
 		(uuid "6fd8f262-5565-473b-9936-c3d52b943408")
 		(property "Reference" "J3"
-			(at 114.3 19.05 0)
+			(at 196.85 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6450,7 +9857,7 @@
 			)
 		)
 		(property "Value" "LCD konektor"
-			(at 114.3 21.59 0)
+			(at 196.85 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6458,7 +9865,7 @@
 			)
 		)
 		(property "Footprint" "FFC2A32-20-T:GCT_FFC2A32-20-T"
-			(at 114.3 39.37 0)
+			(at 196.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6468,7 +9875,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 39.37 0)
+			(at 196.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6477,7 +9884,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 114.3 39.37 0)
+			(at 196.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6486,7 +9893,7 @@
 			)
 		)
 		(property "MF" "Global Connector Technology"
-			(at 114.3 39.37 0)
+			(at 196.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6496,7 +9903,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "4.25mm"
-			(at 114.3 39.37 0)
+			(at 196.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6506,7 +9913,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 114.3 39.37 0)
+			(at 196.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6516,7 +9923,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 114.3 39.37 0)
+			(at 196.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6526,7 +9933,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/FFC2A32-20-T/Global+Connector+Technology/view-part/?ref=eda"
-			(at 114.3 39.37 0)
+			(at 196.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6536,7 +9943,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 114.3 39.37 0)
+			(at 196.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6546,7 +9953,7 @@
 			)
 		)
 		(property "PARTREV" "0.1"
-			(at 114.3 39.37 0)
+			(at 196.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6556,7 +9963,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/FFC2A32-20-T/Global+Connector+Technology/view-part/?ref=snap"
-			(at 114.3 39.37 0)
+			(at 196.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6566,7 +9973,7 @@
 			)
 		)
 		(property "MP" "FFC2A32-20-T"
-			(at 114.3 39.37 0)
+			(at 196.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6576,7 +9983,7 @@
 			)
 		)
 		(property "Description_1" "20 Position FFC, FPC Connector Contacts, Vertical - 1 Sided 0.020 (0.50mm) Surface Mount"
-			(at 114.3 39.37 0)
+			(at 196.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6586,7 +9993,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 114.3 39.37 0)
+			(at 196.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6596,7 +10003,7 @@
 			)
 		)
 		(property "MANUFACTURER" "GCT"
-			(at 114.3 39.37 0)
+			(at 196.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6688,7 +10095,7 @@
 	)
 	(symbol
 		(lib_id "MC32829:MC32829")
-		(at 109.22 68.58 0)
+		(at 121.92 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6697,7 +10104,7 @@
 		(fields_autoplaced yes)
 		(uuid "78e354b6-cf1e-40e3-b87d-b3484ef632a7")
 		(property "Reference" "S2"
-			(at 119.38 60.96 0)
+			(at 132.08 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6705,15 +10112,15 @@
 			)
 		)
 		(property "Value" "MC32829"
-			(at 119.38 63.5 0)
+			(at 132.08 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "MC32829"
-			(at 125.73 163.5 0)
+		(property "Footprint" "mc3:MC32829"
+			(at 138.43 248.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6723,7 +10130,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 263.5 0)
+			(at 138.43 348.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6733,7 +10140,7 @@
 			)
 		)
 		(property "Description" "TACTILE SWITCH, SPST-NO, 0.05A, 12V, THD"
-			(at 109.22 68.58 0)
+			(at 121.92 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6742,7 +10149,7 @@
 			)
 		)
 		(property "Height" "6"
-			(at 125.73 463.5 0)
+			(at 138.43 548.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6752,7 +10159,7 @@
 			)
 		)
 		(property "Farnell Part Number" ""
-			(at 125.73 563.5 0)
+			(at 138.43 648.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6762,7 +10169,7 @@
 			)
 		)
 		(property "Farnell Price/Stock" ""
-			(at 125.73 663.5 0)
+			(at 138.43 748.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6772,7 +10179,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Multicomp Pro"
-			(at 125.73 763.5 0)
+			(at 138.43 848.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6782,7 +10189,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "MC32829"
-			(at 125.73 863.5 0)
+			(at 138.43 948.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6813,43 +10220,33 @@
 		)
 	)
 	(symbol
-		(lib_id "MC32829:MC32829")
-		(at 109.22 83.82 0)
+		(lib_id "MCU08050D1002BP500:MCU08050D1002BP500")
+		(at 92.71 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "88836276-67af-40a2-ae2b-ec90fd289c1b")
-		(property "Reference" "S3"
-			(at 119.38 76.2 0)
+		(uuid "79b8205c-771d-46ab-9b84-624f4d135e1a")
+		(property "Reference" "R3"
+			(at 101.6 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "MC32829"
-			(at 119.38 78.74 0)
+		(property "Value" "MCU08050D1002BP500"
+			(at 101.6 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "MC32829"
-			(at 125.73 178.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 278.74 0)
+		(property "Footprint" "2012:RESC2012X55N"
+			(at 106.68 185.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6858,8 +10255,18 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "TACTILE SWITCH, SPST-NO, 0.05A, 12V, THD"
-			(at 109.22 83.82 0)
+		(property "Datasheet" "https://www.vishay.com/docs/28700/mcx0x0xpre.pdf"
+			(at 106.68 285.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "VISHAY - MCU08050D1002BP500 - SMD Chip Resistor, 10 kohm, +/- 0.1%, 125 mW, 0805 [2012 Metric], Thin Film, High Power"
+			(at 92.71 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6867,8 +10274,8 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "6"
-			(at 125.73 478.74 0)
+		(property "Height" "0.55"
+			(at 106.68 485.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6878,7 +10285,7 @@
 			)
 		)
 		(property "Farnell Part Number" ""
-			(at 125.73 578.74 0)
+			(at 106.68 585.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6888,7 +10295,127 @@
 			)
 		)
 		(property "Farnell Price/Stock" ""
-			(at 125.73 678.74 0)
+			(at 106.68 685.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Vishay"
+			(at 106.68 785.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MCU08050D1002BP500"
+			(at 106.68 885.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ab98aa0b-bec2-40e9-9739-bbe938407d5a")
+		)
+		(pin "1"
+			(uuid "2a7bad52-14ac-419f-9b75-376fe1217f8b")
+		)
+		(instances
+			(project "fotoaparat"
+				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MC0603B104K250CT:MC0603B104K250CT")
+		(at 22.86 5.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "80301ed9-b808-4b90-8463-3b032bf0d755")
+		(property "Reference" "C4"
+			(at 29.21 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MC0603B104K250CT"
+			(at 29.21 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mc06:CAPC1608X87N"
+			(at 31.75 101.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 201.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "MULTICOMP - MC0603B104K250CT - CAP, MLCC, X7R, 100NF, 25V, 0603, REEL"
+			(at 22.86 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.87"
+			(at 31.75 401.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Part Number" ""
+			(at 31.75 501.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Price/Stock" ""
+			(at 31.75 601.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6898,7 +10425,127 @@
 			)
 		)
 		(property "Manufacturer_Name" "Multicomp Pro"
-			(at 125.73 778.74 0)
+			(at 31.75 701.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MC0603B104K250CT"
+			(at 31.75 801.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "caad48d1-0cd3-4a0f-a631-fdf8a1a37483")
+		)
+		(pin "1"
+			(uuid "fbdc7391-3f70-4d45-8af2-3476c2720b88")
+		)
+		(instances
+			(project "fotoaparat"
+				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MC32829:MC32829")
+		(at 121.92 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "88836276-67af-40a2-ae2b-ec90fd289c1b")
+		(property "Reference" "S3"
+			(at 132.08 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MC32829"
+			(at 132.08 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mc3:MC32829"
+			(at 138.43 261.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 361.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "TACTILE SWITCH, SPST-NO, 0.05A, 12V, THD"
+			(at 121.92 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "6"
+			(at 138.43 561.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Part Number" ""
+			(at 138.43 661.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Price/Stock" ""
+			(at 138.43 761.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Multicomp Pro"
+			(at 138.43 861.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6908,7 +10555,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "MC32829"
-			(at 125.73 878.74 0)
+			(at 138.43 961.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6939,8 +10586,488 @@
 		)
 	)
 	(symbol
+		(lib_id "GRM0335C1H300GA01D:GRM0335C1H300GA01D")
+		(at -1.27 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c12de73-3c4d-45f9-aad5-f8887e63726b")
+		(property "Reference" "C6"
+			(at 5.08 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GRM0335C1H300GA01D"
+			(at 5.08 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "grm033:GRM033D70J224ME01D"
+			(at 7.62 129.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM0335C1H300GA01-01A.pdf"
+			(at 7.62 229.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Chip Capacitor value 300"
+			(at -1.27 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.33"
+			(at 7.62 429.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Part Number" ""
+			(at 7.62 529.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Price/Stock" ""
+			(at 7.62 629.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Murata Electronics"
+			(at 7.62 729.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM0335C1H300GA01D"
+			(at 7.62 829.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ada947bc-cfa6-4669-adf7-4c03fe9dc683")
+		)
+		(pin "2"
+			(uuid "d4c98158-9786-428f-9cba-aa9c600c3ec9")
+		)
+		(instances
+			(project ""
+				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MC0603B104K250CT:MC0603B104K250CT")
+		(at 22.86 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c22c0bc-87bd-4d31-bcc7-811b907ed0ea")
+		(property "Reference" "C1"
+			(at 29.21 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MC0603B104K250CT"
+			(at 29.21 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mc06:CAPC1608X87N"
+			(at 31.75 127.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 227.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "MULTICOMP - MC0603B104K250CT - CAP, MLCC, X7R, 100NF, 25V, 0603, REEL"
+			(at 22.86 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.87"
+			(at 31.75 427.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Part Number" ""
+			(at 31.75 527.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Price/Stock" ""
+			(at 31.75 627.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Multicomp Pro"
+			(at 31.75 727.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MC0603B104K250CT"
+			(at 31.75 827.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7d0bf54e-dcd4-4df8-a4a1-96051c82a9e0")
+		)
+		(pin "1"
+			(uuid "acd3cae4-e223-45d9-a21e-aa77f2896d1d")
+		)
+		(instances
+			(project ""
+				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GRM0335C1H300GA01D:GRM0335C1H300GA01D")
+		(at -1.27 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e5d3b95-7efe-4eca-9d93-d4757cb843ba")
+		(property "Reference" "C7"
+			(at 5.08 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GRM0335C1H300GA01D"
+			(at 5.08 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "grm033:GRM033D70J224ME01D"
+			(at 7.62 136.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM0335C1H300GA01-01A.pdf"
+			(at 7.62 236.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Chip Capacitor value 300"
+			(at -1.27 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.33"
+			(at 7.62 436.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Part Number" ""
+			(at 7.62 536.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Price/Stock" ""
+			(at 7.62 636.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Murata Electronics"
+			(at 7.62 736.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM0335C1H300GA01D"
+			(at 7.62 836.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5d391ac1-9df0-4315-8cb8-40b4d2e27ca3")
+		)
+		(pin "2"
+			(uuid "aa1d0978-22ed-4114-a44c-759a27f9eb36")
+		)
+		(instances
+			(project "fotoaparat"
+				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MCU08050D1002BP500:MCU08050D1002BP500")
+		(at 92.71 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90b71a59-f969-4eab-9ac1-ec172cc81f2c")
+		(property "Reference" "R4"
+			(at 101.6 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCU08050D1002BP500"
+			(at 101.6 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "2012:RESC2012X55N"
+			(at 106.68 188.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/28700/mcx0x0xpre.pdf"
+			(at 106.68 288.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "VISHAY - MCU08050D1002BP500 - SMD Chip Resistor, 10 kohm, +/- 0.1%, 125 mW, 0805 [2012 Metric], Thin Film, High Power"
+			(at 92.71 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.55"
+			(at 106.68 488.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Part Number" ""
+			(at 106.68 588.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Price/Stock" ""
+			(at 106.68 688.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Vishay"
+			(at 106.68 788.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MCU08050D1002BP500"
+			(at 106.68 888.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7262355a-3782-462a-9109-ea1c7804d0a3")
+		)
+		(pin "1"
+			(uuid "b62bdf54-8420-4e3c-b68f-70e90a194f36")
+		)
+		(instances
+			(project "fotoaparat"
+				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "2025-09-30_17-10-32:MPQ4432GL-AEC1-P")
-		(at 173.99 48.26 0)
+		(at 223.52 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6949,7 +11076,7 @@
 		(fields_autoplaced yes)
 		(uuid "97739ac6-f031-4c0c-8e8d-66d5584c5526")
 		(property "Reference" "U2"
-			(at 194.31 38.1 0)
+			(at 243.84 19.05 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6957,15 +11084,15 @@
 			)
 		)
 		(property "Value" "Regulator 3.3v"
-			(at 194.31 40.64 0)
+			(at 243.84 21.59 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "QFN-3x4_MPQ4432_MNP"
-			(at 173.99 48.26 0)
+		(property "Footprint" "MPQ:QFN-3x4_MPQ4432_MNP"
+			(at 223.52 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6975,7 +11102,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MPQ4432-AEC1"
-			(at 173.99 48.26 0)
+			(at 223.52 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6985,7 +11112,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 173.99 48.26 0)
+			(at 223.52 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7051,43 +11178,33 @@
 		)
 	)
 	(symbol
-		(lib_id "CFS-0201MB:CFS-0201MB")
-		(at 104.14 114.3 0)
+		(lib_id "MCU08050D1002BP500:MCU08050D1002BP500")
+		(at 92.71 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b8d0ee57-0a90-4de3-9d58-7dc2c0f5ed55")
-		(property "Reference" "S5"
-			(at 119.38 106.68 0)
+		(uuid "9f3bdcca-bc50-4603-8b5d-2a5e2198a429")
+		(property "Reference" "R5"
+			(at 101.6 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "CFS-0201MB"
-			(at 119.38 109.22 0)
+		(property "Value" "MCU08050D1002BP500"
+			(at 101.6 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "CFS0201MB"
-			(at 130.81 209.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.nidec-copal-electronics.com/e/catalog/switch/cfs.pdf"
-			(at 130.81 309.22 0)
+		(property "Footprint" "2012:RESC2012X55N"
+			(at 106.68 193.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7096,8 +11213,18 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "SWITCH DIP SPST 100MA 6V Gullwing"
-			(at 104.14 114.3 0)
+		(property "Datasheet" "https://www.vishay.com/docs/28700/mcx0x0xpre.pdf"
+			(at 106.68 293.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "VISHAY - MCU08050D1002BP500 - SMD Chip Resistor, 10 kohm, +/- 0.1%, 125 mW, 0805 [2012 Metric], Thin Film, High Power"
+			(at 92.71 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7105,8 +11232,8 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "3.7"
-			(at 130.81 509.22 0)
+		(property "Height" "0.55"
+			(at 106.68 493.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7116,7 +11243,7 @@
 			)
 		)
 		(property "Farnell Part Number" ""
-			(at 130.81 609.22 0)
+			(at 106.68 593.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7126,7 +11253,247 @@
 			)
 		)
 		(property "Farnell Price/Stock" ""
-			(at 130.81 709.22 0)
+			(at 106.68 693.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Vishay"
+			(at 106.68 793.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MCU08050D1002BP500"
+			(at 106.68 893.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "176f5d19-3cf2-46d6-b885-2a8722bc9918")
+		)
+		(pin "1"
+			(uuid "91ae9ba2-a971-4c6f-af99-099c700426da")
+		)
+		(instances
+			(project "fotoaparat"
+				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HC49S-8-30-50-70-30-ATF:HC49S-8-30-50-70-30-ATF")
+		(at 1.27 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b4ae2465-3dce-447a-ace9-73d27847ffb2")
+		(property "Reference" "Y1"
+			(at 6.35 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HC49S-8-30-50-70-30-ATF"
+			(at 6.35 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "hc4:HC49S830507030ATF"
+			(at 10.16 146.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 10.16 246.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "MULTICOMP PRO HC49S-8-30-50-70-30-ATFCrystal, 8 MHz, Through Hole, 10.9mm x 4.65mm, 50 ppm, 30 pF, 30 ppm, HC49S"
+			(at 1.27 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "4"
+			(at 10.16 446.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Part Number" ""
+			(at 10.16 546.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Price/Stock" ""
+			(at 10.16 646.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Multicomp Pro"
+			(at 10.16 746.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "HC49S-8-30-50-70-30-ATF"
+			(at 10.16 846.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1b76b8c5-8fa7-47f5-919e-5831309f6fe6")
+		)
+		(pin "1"
+			(uuid "160f9987-0d37-4ffd-b7f1-177483e5810a")
+		)
+		(instances
+			(project ""
+				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
+					(reference "Y1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CFS-0201MB:CFS-0201MB")
+		(at 95.25 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b8d0ee57-0a90-4de3-9d58-7dc2c0f5ed55")
+		(property "Reference" "S5"
+			(at 110.49 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CFS-0201MB"
+			(at 110.49 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cfs:CFS0201MB"
+			(at 121.92 126.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.nidec-copal-electronics.com/e/catalog/switch/cfs.pdf"
+			(at 121.92 226.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "SWITCH DIP SPST 100MA 6V Gullwing"
+			(at 95.25 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "3.7"
+			(at 121.92 426.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Part Number" ""
+			(at 121.92 526.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Price/Stock" ""
+			(at 121.92 626.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7136,7 +11503,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Nidec Copal"
-			(at 130.81 809.22 0)
+			(at 121.92 726.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7146,7 +11513,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "CFS-0201MB"
-			(at 130.81 909.22 0)
+			(at 121.92 826.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7177,8 +11544,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Socket")
+		(at 111.76 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d6236f4c-7a6e-4158-b6cb-70b5e0e4955e")
+		(property "Reference" "J6"
+			(at 113.03 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "UART"
+			(at 113.03 66.0399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+			(at 111.76 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 111.76 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4cd8c54d-e325-4c5f-a2e8-957e3dd34d54")
+		)
+		(pin "2"
+			(uuid "a8c283e6-8d70-4b6e-b430-2be7aa39a75f")
+		)
+		(instances
+			(project ""
+				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "2025-09-30_17-20-56:MCP73833-FCI_UN")
-		(at 198.12 83.82 0)
+		(at 212.09 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7187,7 +11624,7 @@
 		(fields_autoplaced yes)
 		(uuid "e420266a-57c5-4c9e-8eda-e9e31f56a0f0")
 		(property "Reference" "U3"
-			(at 231.14 73.66 0)
+			(at 245.11 58.42 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7195,15 +11632,15 @@
 			)
 		)
 		(property "Value" "MCP73833-FCI/UN"
-			(at 231.14 76.2 0)
+			(at 245.11 60.96 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "MSOP10_MC_MCH"
-			(at 198.12 83.82 0)
+		(property "Footprint" "MCP:MSOP10_MC_MCH"
+			(at 212.09 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7213,7 +11650,7 @@
 			)
 		)
 		(property "Datasheet" "MCP73833-FCI/UN"
-			(at 198.12 83.82 0)
+			(at 212.09 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7223,7 +11660,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 198.12 83.82 0)
+			(at 212.09 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7271,43 +11708,33 @@
 		)
 	)
 	(symbol
-		(lib_id "MCU08050D1002BP500:MCU08050D1002BP500")
-		(at 92.71 129.54 0)
+		(lib_id "MC0805B105K160CT:MC0805B105K160CT")
+		(at 22.86 -3.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f48787f8-15ce-47cb-86cc-25c516842799")
-		(property "Reference" "R2"
-			(at 101.6 123.19 0)
+		(uuid "e937713c-24ef-4c7a-b229-1dd864708761")
+		(property "Reference" "C5"
+			(at 29.21 -10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "MCU08050D1002BP500"
-			(at 101.6 125.73 0)
+		(property "Value" "MC0805B105K160CT"
+			(at 29.21 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "RESC2012X55N"
-			(at 106.68 225.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/28700/mcx0x0xpre.pdf"
-			(at 106.68 325.73 0)
+		(property "Footprint" "mc08:CAPC2012X135N"
+			(at 31.75 92.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7316,8 +11743,18 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "VISHAY - MCU08050D1002BP500 - SMD Chip Resistor, 10 kohm, +/- 0.1%, 125 mW, 0805 [2012 Metric], Thin Film, High Power"
-			(at 92.71 129.54 0)
+		(property "Datasheet" ""
+			(at 31.75 192.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "MULTICOMP - MC0805B105K160CT - CAP, MLCC, X7R, 1UF, 16V, 0805, REEL"
+			(at 22.86 -3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7325,8 +11762,8 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "0.55"
-			(at 106.68 525.73 0)
+		(property "Height" "1.35"
+			(at 31.75 392.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7336,7 +11773,7 @@
 			)
 		)
 		(property "Farnell Part Number" ""
-			(at 106.68 625.73 0)
+			(at 31.75 492.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7346,7 +11783,127 @@
 			)
 		)
 		(property "Farnell Price/Stock" ""
-			(at 106.68 725.73 0)
+			(at 31.75 592.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Multicomp Pro"
+			(at 31.75 692.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MC0805B105K160CT"
+			(at 31.75 792.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "29e92d1b-e110-4e9b-ba2e-3a9f1e0c1911")
+		)
+		(pin "1"
+			(uuid "4afa857d-85fb-403c-ad8a-d3c5d470aee1")
+		)
+		(instances
+			(project ""
+				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MCU08050D1002BP500:MCU08050D1002BP500")
+		(at 100.33 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f48787f8-15ce-47cb-86cc-25c516842799")
+		(property "Reference" "R2"
+			(at 109.22 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCU08050D1002BP500"
+			(at 109.22 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "2012:RESC2012X55N"
+			(at 114.3 135.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/28700/mcx0x0xpre.pdf"
+			(at 114.3 235.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "VISHAY - MCU08050D1002BP500 - SMD Chip Resistor, 10 kohm, +/- 0.1%, 125 mW, 0805 [2012 Metric], Thin Film, High Power"
+			(at 100.33 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.55"
+			(at 114.3 435.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Part Number" ""
+			(at 114.3 535.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Price/Stock" ""
+			(at 114.3 635.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7356,7 +11913,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Vishay"
-			(at 106.68 825.73 0)
+			(at 114.3 735.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7366,7 +11923,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "MCU08050D1002BP500"
-			(at 106.68 925.73 0)
+			(at 114.3 835.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7391,43 +11948,33 @@
 		)
 	)
 	(symbol
-		(lib_id "47346-0001:47346-0001")
-		(at 204.47 128.27 0)
+		(lib_id "MC0603B104K250CT:MC0603B104K250CT")
+		(at 22.86 12.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f83b35d6-1e15-48cc-ba80-defc9cb59de0")
-		(property "Reference" "J1"
-			(at 218.44 120.65 0)
+		(uuid "f78d4014-7a58-467e-ae41-37b65b8a838b")
+		(property "Reference" "C3"
+			(at 29.21 5.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "USB Konektor"
-			(at 218.44 123.19 0)
+		(property "Value" "MC0603B104K250CT"
+			(at 29.21 7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "473460001"
-			(at 228.6 223.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.molex.com/pdm_docs/sd/473460001_sd.pdf"
-			(at 228.6 323.19 0)
+		(property "Footprint" "mc06:CAPC1608X87N"
+			(at 31.75 108.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7436,8 +11983,18 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Micro USB B Receptacle Bottom Mount Assy Molex Right Angle SMT Type B Version 2.0 Micro USB Connector Socket, 30 V ac, 1A 47352 MICRO-USB"
-			(at 204.47 128.27 0)
+		(property "Datasheet" ""
+			(at 31.75 208.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "MULTICOMP - MC0603B104K250CT - CAP, MLCC, X7R, 100NF, 25V, 0603, REEL"
+			(at 22.86 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7445,8 +12002,8 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "3.19"
-			(at 228.6 523.19 0)
+		(property "Height" "0.87"
+			(at 31.75 408.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7456,7 +12013,7 @@
 			)
 		)
 		(property "Farnell Part Number" ""
-			(at 228.6 623.19 0)
+			(at 31.75 508.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7466,7 +12023,127 @@
 			)
 		)
 		(property "Farnell Price/Stock" ""
-			(at 228.6 723.19 0)
+			(at 31.75 608.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Multicomp Pro"
+			(at 31.75 708.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MC0603B104K250CT"
+			(at 31.75 808.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a0a2077c-3b0f-442e-ba7c-bf4d763d23b5")
+		)
+		(pin "1"
+			(uuid "34a05865-52bb-4304-9af9-fb9deb9d7206")
+		)
+		(instances
+			(project "fotoaparat"
+				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "47346-0001:47346-0001")
+		(at 231.14 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f83b35d6-1e15-48cc-ba80-defc9cb59de0")
+		(property "Reference" "J1"
+			(at 245.11 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "USB Konektor"
+			(at 245.11 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "47436:473460001"
+			(at 255.27 188.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.molex.com/pdm_docs/sd/473460001_sd.pdf"
+			(at 255.27 288.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Micro USB B Receptacle Bottom Mount Assy Molex Right Angle SMT Type B Version 2.0 Micro USB Connector Socket, 30 V ac, 1A 47352 MICRO-USB"
+			(at 231.14 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "3.19"
+			(at 255.27 488.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Part Number" ""
+			(at 255.27 588.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Farnell Price/Stock" ""
+			(at 255.27 688.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7476,7 +12153,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Molex"
-			(at 228.6 823.19 0)
+			(at 255.27 788.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7486,7 +12163,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "47346-0001"
-			(at 228.6 923.19 0)
+			(at 255.27 888.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)

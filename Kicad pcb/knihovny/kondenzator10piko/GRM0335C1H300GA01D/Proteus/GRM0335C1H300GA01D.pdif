@@ -1,0 +1,106 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "GRM0335C1H300GA01D"
+   (description "Chip Capacitor value 300")
+   (family "CAP")
+   (package "GRM033D70J224ME01D")
+   (attribute "Datasheet Link" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM0335C1H300GA01-01A.pdf")
+   (attribute "Geometry.Height" "0.33mm")
+   (attribute "Farnell Part Number" "")
+   (attribute "Farnell Price/Stock" "")
+   (attribute "Manufacturer_Name" "Murata Electronics")
+   (attribute "Manufacturer_Part_Number" "GRM0335C1H300GA01D")
+   (gate
+    (symbol "GRM0335C1H300GA01D")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+   )
+  )
+  (symbol "GRM0335C1H300GA01D"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 220 100) (pt 220 -100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 280 100) (pt 280 -100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 200 0) (pt 220 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 280 0) (pt 300 0))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 500 0) (rot 0) (mir X) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "GRM033D70J224ME01D"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -0.3 0.15)
+      (pt 0.3 0.15)
+      (pt 0.3 -0.15)
+      (pt -0.3 -0.15)
+      (pt -0.3 0.15))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -0.95 0.65)
+      (pt 0.95 0.65)
+      (pt 0.95 -0.65)
+      (pt -0.95 -0.65)
+      (pt -0.95 0.65))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -0.7 0.05)
+      (arc (pt -0.700 0.050) (pt -0.750 -0.050) (pt -0.650 0.050) (start 180.0) (sweep 90.0))
+      (pt -0.7 -0.05)
+      (arc (pt -0.700 -0.050) (pt -0.750 -0.050) (pt -0.650 0.050) (start 180.0) (sweep -90.0))
+      (pt -0.7 0.05))))
+   (leg 1 (pt -0.237 0.000) (padstack 0))
+   (leg 2 (pt 0.237 0.000) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.250 0.350 0 0 90.000))
+   )
+   (model "GRM0335C1H300GA01D.stp"
+    (euler 0 0 0)
+    (offset 0 0 0.15000000596046448)
+   )
+  )
+ )
+)

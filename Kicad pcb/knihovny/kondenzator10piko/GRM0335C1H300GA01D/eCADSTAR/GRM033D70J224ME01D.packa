@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "GRM0335C1H300GA01D"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2024-04-29-16:38:03)
+    (mountForm default
+        (footprintRef "GRM033D70J224ME01D")
+        (spec "System")
+    )
+)

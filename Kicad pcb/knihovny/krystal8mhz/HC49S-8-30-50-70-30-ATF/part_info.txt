@@ -1,0 +1,9 @@
+Manufacturer=Multicomp Pro
+PartNumber=HC49S-8-30-50-70-30-ATF
+PartCategory=Crystal or Oscillator
+PackageCategory=Other
+PinCount=2
+Version=2.1
+Released=2024-01-26 03:26:36
+Downloaded=2025-10-01 18:11:27
+3D=Y
