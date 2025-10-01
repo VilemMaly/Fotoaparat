@@ -1,0 +1,16 @@
+.MCU08050D1002BP500 :1 ;VISHAY - MCU08050D1002BP500 - SMD Chip Resistor, 10 kohm, +/- 0.1%, 125 mW, 0805 [2012 Metric], Thin Film, High Power
+RESC2012X55N
+*STM R
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN MCU08050D1002BP500
+~!Farnell Part Number (-)
+~!Farnell Price/Stock (-)
+~!Manufacturer_Name (Vishay)
+~!Manufacturer_Part_Number (MCU08050D1002BP500)
+~!Link Datasheet (https://www.vishay.com/docs/28700/mcx0x0xpre.pdf)
+~!Height (0.55mm)
+~!3D_Model (MCU08050D1002BP500)
+MCU08050D1002BP500
+1.1!U 2.1!U 

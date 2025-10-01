@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MCU08050D1002BP500
+D VISHAY - MCU08050D1002BP500 - SMD Chip Resistor, 10 kohm, +/- 0.1%, 125 mW, 0805 [2012 Metric], Thin Film, High Power
+K
+F https://www.vishay.com/docs/28700/mcx0x0xpre.pdf
+$ENDCMP
+#
+#End Doc Library

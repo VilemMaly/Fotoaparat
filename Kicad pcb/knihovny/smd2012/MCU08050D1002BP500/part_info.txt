@@ -1,0 +1,9 @@
+Manufacturer=Vishay
+PartNumber=MCU08050D1002BP500
+PartCategory=Resistor
+PackageCategory=Resistor Chip
+PinCount=2
+Version=2.1
+Released=2022-02-03 09:07:40
+Downloaded=2025-10-01 09:40:08
+3D=Y

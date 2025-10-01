@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MCU08050D1002BP500'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "FARNELL_PART_NUMBER", "FARNELL_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Vishay", "MCU08050D1002BP500" (!) = "", "RESC2012X55N", "Resistor Chip", "", "", "VISHAY - MCU08050D1002BP500 - SMD Chip Resistor, 10 kohm, +/- 0.1%, 125 mW, 0805 [2012 Metric], Thin Film, High Power", "https://www.vishay.com/docs/28700/mcx0x0xpre.pdf", "0.55 mm"
+END_PART
+
+END.
