@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model NCP718ASN330T1G
+#/1262982/1784014/2.50/5/2/Integrated Circuit
+DEF NCP718ASN330T1G IC 0 30 Y Y 1 F N
+F0 "IC" 1050 300 50 H V L CNN
+F1 "NCP718ASN330T1G" 1050 200 50 H V L CNN
+F2 "SOT95P280X100-5N" 1050 100 50 H I L CNN
+F3 "https://www.onsemi.com/pub/Collateral/NCP718-D.PDF" 1050 0 50 H I L CNN
+F4 "UltraLow Quiescent Current typ. 4 A over Temperature; Operating Input Voltage Range 2.5 V to 24 V; Adjustable and Fixed Version Available; High PSRR 60dB at 1kHz; Noise typ. 36 VRMS from 100 Hz to 100 kHz; Stable with 1 F output capacitor; Softstart to Reduce Inrush Current and Overshoots; SOA Limiting for High Vin / High Iout  Static and Dynamic" 1050 -100 50 H I L CNN "Description"
+F5 "1" 1050 -200 50 H I L CNN "Height"
+F6 "" 1050 -300 50 H I L CNN "Farnell Part Number"
+F7 "" 1050 -400 50 H I L CNN "Farnell Price/Stock"
+F8 "onsemi" 1050 -500 50 H I L CNN "Manufacturer_Name"
+F9 "NCP718ASN330T1G" 1050 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X IN 1 0 0 200 R 50 50 0 0 P
+X GND 2 0 -100 200 R 50 50 0 0 P
+X EN 3 0 -200 200 R 50 50 0 0 P
+X NC/ADJ 4 1200 0 200 L 50 50 0 0 P
+X OUT 5 1200 -100 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1000 100 1000 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

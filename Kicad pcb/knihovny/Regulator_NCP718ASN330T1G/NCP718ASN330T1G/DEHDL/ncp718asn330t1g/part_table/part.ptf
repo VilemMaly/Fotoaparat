@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'NCP718ASN330T1G'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "FARNELL_PART_NUMBER", "FARNELL_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "onsemi", "NCP718ASN330T1G" (!) = "", "SOT95P280X100-5N", "SOT23 (5-Pin)", "", "", "UltraLow Quiescent Current typ. 4 A over Temperature; Operating Input Voltage Range 2.5 V to 24 V; Adjustable and Fixed Version Available; High PSRR 60dB at 1kHz; Noise typ. 36 VRMS from 100 Hz to 100 kHz; Stable with 1 F output capacitor; Softstart to Reduce Inrush Current and Overshoots; SOA Limiting for High Vin / High Iout  Static and Dynamic", "https://www.onsemi.com/pub/Collateral/NCP718-D.PDF", "1 mm"
+END_PART
+
+END.
