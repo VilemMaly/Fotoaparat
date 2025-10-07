@@ -1,0 +1,78 @@
+Zpráva ERC (2025-10-07T21:52:18+0200, kódování UTF8)
+
+***** List /
+[footprint_link_issues]: The current configuration does not include the footprint library 'cfs'.
+    ; warning
+    @(4350 mils, 2200 mils): Symbol S5 [CFS-0201MB]
+[power_pin_not_driven]: Vývod vstupního napájení není řízen žádným vývodem výstupního napájení
+    ; error
+    @(-2100 mils, 4900 mils): Symbol #PWR034 Vývod 1 [Vstup napájení, Čára]
+[multiple_net_names]: +BATT i Bat + jsou připojeny ke stejným položkám; +BATT bude použit v netlistu
+    ; warning
+    @(-2100 mils, 4900 mils): Symbol #PWR034 Vývod 1 [Vstup napájení, Čára]
+    @(-2100 mils, 5050 mils): Označení 'Bat +'
+[pin_to_pin]: Vývody typu Nespecifikováno a Pasivní jsou spojeny
+    ; warning
+    @(-2150 mils, 5450 mils): Symbol U3 Vývod 10 [VBAT, Nespecifikováno, Čára]
+    @(-2050 mils, 5500 mils): Symbol C2 Vývod 1 [Pasivní, Čára]
+[pin_to_pin]: Vývody typu Nespecifikováno a Nespecifikováno jsou spojeny
+    ; warning
+    @(-2150 mils, 5550 mils): Symbol U3 Vývod 9 [VBAT, Nespecifikováno, Čára]
+    @(-2150 mils, 5450 mils): Symbol U3 Vývod 10 [VBAT, Nespecifikováno, Čára]
+[pin_to_pin]: Vývody typu Nespecifikováno a Pasivní jsou spojeny
+    ; warning
+    @(-2150 mils, 5650 mils): Symbol U3 Vývod 8 [THERM, Nespecifikováno, Čára]
+    @(-2100 mils, 5650 mils): Symbol TH1 Vývod 1 [Pasivní, Čára]
+[pin_to_pin]: Vývody typu Nespecifikováno a Pasivní jsou spojeny
+    ; warning
+    @(-2150 mils, 5750 mils): Symbol U3 Vývod 7 [*PG, Nespecifikováno, Čára]
+    @(-2050 mils, 5750 mils): Symbol R6 Vývod 2 [Pasivní, Čára]
+[pin_to_pin]: Vývody typu Nespecifikováno a Pasivní jsou spojeny
+    ; warning
+    @(-2150 mils, 5850 mils): Symbol U3 Vývod 6 [PROG, Nespecifikováno, Čára]
+    @(-2050 mils, 5850 mils): Symbol R7 Vývod 1 [Pasivní, Čára]
+[pin_to_pin]: Vývody typu Nespecifikováno a Nespecifikováno jsou spojeny
+    ; warning
+    @(-4750 mils, 5450 mils): Symbol U3 Vývod 1 [VDD, Nespecifikováno, Čára]
+    @(-4750 mils, 5550 mils): Symbol U3 Vývod 2 [VDD, Nespecifikováno, Čára]
+[pin_to_pin]: Vývody typu Nespecifikováno a Pasivní jsou spojeny
+    ; warning
+    @(-4750 mils, 5550 mils): Symbol U3 Vývod 2 [VDD, Nespecifikováno, Čára]
+    @(-5550 mils, 5650 mils): Symbol D1 Vývod 2 [A, Pasivní, Čára]
+[pin_to_pin]: Vývody typu Nespecifikováno a Pasivní jsou spojeny
+    ; warning
+    @(-4750 mils, 5650 mils): Symbol U3 Vývod 3 [STAT1, Nespecifikováno, Čára]
+    @(-4850 mils, 5650 mils): Symbol R4 Vývod 2 [Pasivní, Čára]
+[pin_to_pin]: Vývody typu Nespecifikováno a Pasivní jsou spojeny
+    ; warning
+    @(-4750 mils, 5750 mils): Symbol U3 Vývod 4 [STAT2, Nespecifikováno, Čára]
+    @(-4850 mils, 5750 mils): Symbol R5 Vývod 2 [Pasivní, Čára]
+[pin_to_pin]: Vývody typu Nespecifikováno a Vstup napájení jsou spojeny
+    ; warning
+    @(-4750 mils, 5850 mils): Symbol U3 Vývod 5 [VSS, Nespecifikováno, Čára]
+    @(-4850 mils, 5850 mils): Symbol #PWR033 Vývod 1 [Vstup napájení, Čára]
+[power_pin_not_driven]: Vývod vstupního napájení není řízen žádným vývodem výstupního napájení
+    ; error
+    @(7200 mils, 3000 mils): Symbol #PWR012 Vývod 1 [Vstup napájení, Čára]
+[multiple_net_names]: -BATT i GND jsou připojeny ke stejným položkám; -BATT bude použit v netlistu
+    ; warning
+    @(-1700 mils, 4900 mils): Symbol #PWR035 Vývod 1 [Vstup napájení, Čára]
+    @(-5750 mils, 5900 mils): Symbol #PWR029 Vývod 1 [Vstup napájení, Čára]
+[pin_to_pin]: Vývody typu Nespecifikováno a Pasivní jsou spojeny
+    ; warning
+    @(8900 mils, 2250 mils): Symbol J5 Vývod 1 [CD/DAT3, Nespecifikováno, Čára]
+    @(8850 mils, 1700 mils): Symbol R17 Vývod 2 [Pasivní, Čára]
+[pin_to_pin]: Vývody typu Nespecifikováno a Pasivní jsou spojeny
+    ; warning
+    @(8900 mils, 2350 mils): Symbol J5 Vývod 2 [CMD, Nespecifikováno, Čára]
+    @(8500 mils, 1700 mils): Symbol R20 Vývod 2 [Pasivní, Čára]
+[pin_to_pin]: Vývody typu Výstup napájení a Výstup napájení jsou spojeny
+    ; error
+    @(8900 mils, 2450 mils): Symbol J5 Vývod 3 [VSS1, Výstup napájení, Čára]
+    @(8900 mils, 2750 mils): Symbol J5 Vývod 6 [VSS2, Výstup napájení, Čára]
+[pin_to_pin]: Vývody typu Nespecifikováno a Obousměrný jsou spojeny
+    ; warning
+    @(8900 mils, 2650 mils): Symbol J5 Vývod 5 [CLK, Nespecifikováno, Čára]
+    @(6500 mils, 2500 mils): Symbol U1 Vývod 21 [PA5, Obousměrný, Čára]
+
+ ** ERC zprávy: 19 chyb 3 výstrahy 16
