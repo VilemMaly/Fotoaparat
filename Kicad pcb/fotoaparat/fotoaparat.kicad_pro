@@ -193,6 +193,7 @@
       ],
       "track_widths": [
         0.0,
+        0.2,
         0.3,
         0.5
       ],
@@ -514,7 +515,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "fotoaparat.step",
       "svg": "",
       "vrml": ""
     },
