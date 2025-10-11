@@ -1,0 +1,654 @@
+(kicad_wks
+	(version 20231118)
+	(generator "pl_editor")
+	(generator_version "9.0")
+	(setup
+		(textsize 1.5 1.5)
+		(linewidth 0.15)
+		(textlinewidth 0.15)
+		(left_margin 10)
+		(right_margin 10)
+		(top_margin 10)
+		(bottom_margin 10)
+	)
+	(rect
+		(name "")
+		(start 110 34)
+		(end 2 2)
+		(comment "rect around the title block")
+	)
+	(rect
+		(name "")
+		(start 0 0 ltcorner)
+		(end 0 0)
+		(repeat 2)
+		(incrx 2)
+		(incry 2)
+	)
+	(line
+		(name "")
+		(start 50 2 ltcorner)
+		(end 50 0 ltcorner)
+		(repeat 30)
+		(incrx 50)
+	)
+	(tbtext "1"
+		(name "")
+		(pos 25 1 ltcorner)
+		(font
+			(size 1.3 1.3)
+		)
+		(repeat 100)
+		(incrx 50)
+	)
+	(line
+		(name "")
+		(start 50 2 lbcorner)
+		(end 50 0 lbcorner)
+		(repeat 30)
+		(incrx 50)
+	)
+	(tbtext "1"
+		(name "")
+		(pos 25 1 lbcorner)
+		(font
+			(size 1.3 1.3)
+		)
+		(repeat 100)
+		(incrx 50)
+	)
+	(line
+		(name "")
+		(start 0 50 ltcorner)
+		(end 2 50 ltcorner)
+		(repeat 30)
+		(incry 50)
+	)
+	(tbtext "A"
+		(name "")
+		(pos 1 25 ltcorner)
+		(font
+			(size 1.3 1.3)
+		)
+		(justify center)
+		(repeat 100)
+		(incry 50)
+	)
+	(line
+		(name "")
+		(start 0 50 rtcorner)
+		(end 2 50 rtcorner)
+		(repeat 30)
+		(incry 50)
+	)
+	(tbtext "A"
+		(name "")
+		(pos 1 25 rtcorner)
+		(font
+			(size 1.3 1.3)
+		)
+		(justify center)
+		(repeat 100)
+		(incry 50)
+	)
+	(tbtext "Date: ${ISSUE_DATE}"
+		(name "")
+		(pos 87 6.9)
+	)
+	(line
+		(name "")
+		(start 110 5.5)
+		(end 2 5.5)
+	)
+	(tbtext "${KICAD_VERSION}"
+		(name "")
+		(pos 109 4.1)
+		(comment "Kicad version")
+	)
+	(line
+		(name "")
+		(start 110 8.5)
+		(end 2 8.5)
+	)
+	(tbtext "Rev: ${REVISION}"
+		(name "")
+		(pos 24 6.9)
+		(font bold)
+	)
+	(tbtext "Size: ${PAPER}"
+		(name "")
+		(pos 109 6.9)
+		(comment "Paper format name")
+	)
+	(tbtext "Id: ${#}/${##}"
+		(name "")
+		(pos 24 4.1)
+		(comment "Sheet id")
+	)
+	(line
+		(name "")
+		(start 110 12.5)
+		(end 2 12.5)
+	)
+	(tbtext "Title: ${TITLE}"
+		(name "")
+		(pos 109 10.7)
+		(font
+			(size 2 2) bold italic)
+	)
+	(tbtext "File: ${FILENAME}"
+		(name "")
+		(pos 109 14.3)
+	)
+	(line
+		(name "")
+		(start 110 18.5)
+		(end 2 18.5)
+	)
+	(tbtext "Sheet: ${SHEETPATH}"
+		(name "")
+		(pos 109 17)
+	)
+	(tbtext "${COMPANY}"
+		(name "")
+		(pos 109 20)
+		(font bold)
+		(comment "Company name")
+	)
+	(tbtext "${COMMENT1}"
+		(name "")
+		(pos 109 23)
+		(comment "Comment 0")
+	)
+	(tbtext "${COMMENT2}"
+		(name "")
+		(pos 109 26)
+		(comment "Comment 1")
+	)
+	(tbtext "${COMMENT3}"
+		(name "")
+		(pos 109 29)
+		(comment "Comment 2")
+	)
+	(tbtext "${COMMENT4}"
+		(name "")
+		(pos 109 32)
+		(comment "Comment 3")
+	)
+	(line
+		(name "")
+		(start 90 8.5)
+		(end 90 5.5)
+	)
+	(line
+		(name "")
+		(start 26 8.5)
+		(end 26 2)
+	)
+	(rect
+		(name "")
+		(start 255.049 190.4822)
+		(end 166.149 144.7622)
+		(linewidth 1.524)
+	)
+	(tbtext "Stm32l4"
+		(name "")
+		(pos 252.509 167.6222)
+		(font
+			(size 12.7 12.7)
+		)
+	)
+	(tbtext "Text"
+		(name "")
+		(pos 0 0)
+	)
+	(rect
+		(name "")
+		(start 115.349 193.0222)
+		(end 26.449 147.3022)
+		(linewidth 1.524)
+	)
+	(tbtext "Ov7670 \nfifo"
+		(name "")
+		(pos 67.089 170.162)
+		(font
+			(size 12.7 12.7)
+		)
+		(justify center)
+	)
+	(line
+		(name "")
+		(start 158.529 182.8622)
+		(end 122.969 182.8622)
+	)
+	(line
+		(name "")
+		(start 122.969 182.8622)
+		(end 128.049 187.9422)
+	)
+	(line
+		(name "")
+		(start 122.969 182.8622)
+		(end 128.049 177.7822)
+	)
+	(line
+		(name "")
+		(start 120.429 154.9222)
+		(end 158.529 154.9222)
+	)
+	(line
+		(name "")
+		(start 158.529 154.9222)
+		(end 153.449 160.0022)
+	)
+	(line
+		(name "")
+		(start 158.529 154.9222)
+		(end 153.449 149.8422)
+	)
+	(tbtext "i2c"
+		(name "")
+		(pos 153.449 200.6422)
+		(font
+			(size 12.7 12.7)
+		)
+	)
+	(tbtext "Dat0..7"
+		(name "")
+		(pos 168.689 132.0622)
+		(font
+			(size 12.7 12.7)
+		)
+	)
+	(tbtext "st7789v\nlcd Display"
+		(name "")
+		(pos 272.829 58.402)
+		(font
+			(size 12.7 12.7)
+		)
+	)
+	(rect
+		(name "")
+		(start 275.369 81.2622)
+		(end 163.609 35.5422)
+		(linewidth 1.524)
+	)
+	(line
+		(name "")
+		(start 201.709 139.6822)
+		(end 201.709 88.8822)
+	)
+	(line
+		(name "")
+		(start 201.709 88.8822)
+		(end 206.789 96.5022)
+	)
+	(line
+		(name "")
+		(start 201.709 88.8822)
+		(end 196.629 96.5022)
+	)
+	(tbtext "spi2 in"
+		(name "")
+		(pos 199.169 104.1222)
+		(font
+			(size 12.7 12.7)
+		)
+	)
+	(tbtext "SD karta"
+		(name "")
+		(pos 392.209 165.082)
+		(font
+			(size 12.7 12.7)
+		)
+	)
+	(rect
+		(name "")
+		(start 394.749 187.9422)
+		(end 305.849 142.2222)
+		(linewidth 1.524)
+	)
+	(tbtext "spi1 cmd in"
+		(name "")
+		(pos 326.169 205.722)
+		(font
+			(size 12.7 12.7)
+		)
+	)
+	(line
+		(name "")
+		(start 260.129 180.3222)
+		(end 295.689 180.3222)
+	)
+	(line
+		(name "")
+		(start 295.689 180.3222)
+		(end 288.069 185.4022)
+	)
+	(line
+		(name "")
+		(start 295.689 180.3222)
+		(end 288.069 175.2422)
+	)
+	(line
+		(name "")
+		(start 298.229 152.3822)
+		(end 262.669 152.3822)
+	)
+	(line
+		(name "")
+		(start 262.669 152.3822)
+		(end 267.749 157.4622)
+	)
+	(line
+		(name "")
+		(start 262.669 152.3822)
+		(end 267.749 147.3022)
+	)
+	(tbtext "spi1 dat0 out"
+		(name "")
+		(pos 336.329 134.602)
+		(font
+			(size 12.7 12.7)
+		)
+	)
+	(tbtext "ncp718"
+		(name "")
+		(pos 89.949 60.9422)
+		(font
+			(size 12.7 12.7)
+		)
+	)
+	(rect
+		(name "")
+		(start 92.489 83.8022)
+		(end 16.289 38.0822)
+		(linewidth 1.524)
+	)
+	(line
+		(name "")
+		(start 97.569 71.1022)
+		(end 150.909 71.1022)
+	)
+	(line
+		(name "")
+		(start 150.909 71.1022)
+		(end 140.749 76.1822)
+	)
+	(line
+		(name "")
+		(start 150.909 71.1022)
+		(end 140.749 66.0222)
+	)
+	(tbtext "3.3v"
+		(name "")
+		(pos 143.289 53.3222)
+		(font
+			(size 12.7 12.7)
+		)
+	)
+	(line
+		(name "")
+		(start 166.149 139.6822)
+		(end 84.869 101.5822)
+	)
+	(line
+		(name "")
+		(start 84.869 101.5822)
+		(end 87.409 111.7422)
+	)
+	(line
+		(name "")
+		(start 84.869 101.5822)
+		(end 95.029 99.0422)
+	)
+	(tbtext "enable\n"
+		(name "")
+		(pos 79.789 104.1222)
+		(font
+			(size 12.7 12.7)
+		)
+	)
+	(rect
+		(name "")
+		(start 227.109 287.0022)
+		(end 150.909 241.2822)
+		(linewidth 1.524)
+	)
+	(tbtext "3.3v"
+		(name "")
+		(pos 194.089 226.0422)
+		(font
+			(size 12.7 12.7)
+		)
+	)
+	(tbtext "ncp718"
+		(name "")
+		(pos 224.569 264.1422)
+		(font
+			(size 12.7 12.7)
+		)
+	)
+	(line
+		(name "")
+		(start 196.629 236.2022)
+		(end 196.629 198.1022)
+	)
+	(line
+		(name "")
+		(start 196.629 198.1022)
+		(end 201.709 203.1822)
+	)
+	(line
+		(name "")
+		(start 196.629 198.1022)
+		(end 191.549 203.1822)
+	)
+	(line
+		(name "")
+		(start 143.289 253.9822)
+		(end 87.409 208.2622)
+	)
+	(line
+		(name "")
+		(start 87.409 208.2622)
+		(end 87.409 215.8822)
+	)
+	(line
+		(name "")
+		(start 87.409 208.2622)
+		(end 95.029 208.2622)
+	)
+	(line
+		(name "")
+		(start 232.189 259.0622)
+		(end 336.329 205.7222)
+	)
+	(line
+		(name "")
+		(start 333.789 213.3422)
+		(end 336.329 205.7222)
+	)
+	(line
+		(name "")
+		(start 336.329 205.7222)
+		(end 331.249 203.1822)
+	)
+	(tbtext "3.3v"
+		(name "")
+		(pos 122.969 246.3622)
+		(font
+			(size 12.7 12.7)
+		)
+	)
+	(tbtext "3.3v"
+		(name "")
+		(pos 303.309 251.4422)
+		(font
+			(size 12.7 12.7)
+		)
+	)
+	(rect
+		(name "")
+		(start 232.189 449.5622)
+		(end 130.589 403.8422)
+		(linewidth 1.524)
+	)
+	(tbtext "MCP73833"
+		(name "")
+		(pos 181.389 426.7022)
+		(font
+			(size 12.7 12.7)
+		)
+		(justify center)
+	)
+	(rect
+		(name "")
+		(start 232.189 373.3622)
+		(end 143.289 327.6422)
+		(linewidth 1.524)
+	)
+	(tbtext "li-ion\nbaterie"
+		(name "")
+		(pos 186.469 350.5022)
+		(font
+			(size 12.7 12.7)
+		)
+		(justify center)
+	)
+	(tbtext "USB"
+		(name "")
+		(pos 3.589 426.7022)
+		(font
+			(size 12.7 12.7)
+		)
+		(justify center)
+	)
+	(rect
+		(name "")
+		(start 54.389 449.5622)
+		(end -47.211 403.8422)
+		(linewidth 1.524)
+	)
+	(line
+		(name "")
+		(start 194.089 322.5622)
+		(end 194.089 294.6222)
+	)
+	(line
+		(name "")
+		(start 194.089 294.6222)
+		(end 199.169 299.7022)
+	)
+	(line
+		(name "")
+		(start 194.089 294.6222)
+		(end 189.009 299.7022)
+	)
+	(tbtext "4.2v max"
+		(name "")
+		(pos 178.849 309.862)
+		(font
+			(size 12.7 12.7)
+		)
+	)
+	(line
+		(name "")
+		(start 125.509 340.3422)
+		(end -34.511 340.3422)
+	)
+	(line
+		(name "")
+		(start -37.051 340.3422)
+		(end -39.591 63.4822)
+	)
+	(line
+		(name "")
+		(start -39.591 63.4822)
+		(end -6.571 60.9422)
+	)
+	(line
+		(name "")
+		(start -6.571 60.9422)
+		(end -19.271 71.1022)
+	)
+	(line
+		(name "")
+		(start -6.571 60.9422)
+		(end -19.271 53.3222)
+	)
+	(line
+		(name "")
+		(start 189.009 398.7622)
+		(end 189.009 378.4422)
+	)
+	(line
+		(name "")
+		(start 189.009 378.4422)
+		(end 196.629 383.5222)
+	)
+	(line
+		(name "")
+		(start 189.009 378.4422)
+		(end 181.389 383.5222)
+	)
+	(tbtext "Nabíjení"
+		(name "")
+		(pos 122.969 388.602)
+		(font
+			(size 12.7 12.7)
+		)
+		(justify center)
+	)
+	(line
+		(name "")
+		(start 62.009 426.7022)
+		(end 117.889 426.7022)
+	)
+	(line
+		(name "")
+		(start 117.889 426.7022)
+		(end 105.189 434.3222)
+	)
+	(line
+		(name "")
+		(start 117.889 426.7022)
+		(end 105.189 419.0822)
+	)
+	(tbtext "5v"
+		(name "")
+		(pos 84.869 441.942)
+		(font
+			(size 12.7 12.7)
+		)
+		(justify center)
+	)
+	(line
+		(name "")
+		(start 34.069 396.2222)
+		(end 72.169 281.9222)
+	)
+	(line
+		(name "")
+		(start 72.169 281.9222)
+		(end 168.689 200.6422)
+	)
+	(line
+		(name "")
+		(start 168.689 200.6422)
+		(end 168.689 210.8022)
+	)
+	(line
+		(name "")
+		(start 168.689 200.6422)
+		(end 161.069 200.6422)
+	)
+	(tbtext "Data"
+		(name "")
+		(pos 13.749 380.9822)
+		(font
+			(size 12.7 12.7)
+		)
+		(justify center)
+	)
+)

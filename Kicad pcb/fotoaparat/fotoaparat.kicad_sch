@@ -10962,6 +10962,16 @@
 	)
 	(wire
 		(pts
+			(xy -43.18 128.27) (xy -36.83 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8428a8a8-6582-4cc3-85df-7094762fddc6")
+	)
+	(wire
+		(pts
 			(xy 250.19 113.03) (xy 252.73 113.03)
 		)
 		(stroke
@@ -13511,7 +13521,7 @@
 		(uuid "fe8cf01a-d9b7-4d6a-a660-5799dda0e42f")
 	)
 	(label "pb1"
-		(at 252.73 105.41 0)
+		(at 252.73 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13531,7 +13541,7 @@
 		(uuid "1d48158d-d5b5-4ea2-99c3-a207ac80d806")
 	)
 	(label "sd mosi"
-		(at 171.45 68.58 0)
+		(at 224.79 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13551,7 +13561,7 @@
 		(uuid "25e6325c-7179-4954-b8a6-956405eb52ba")
 	)
 	(label "pb12"
-		(at 250.19 148.59 0)
+		(at 250.19 130.81 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13561,7 +13571,7 @@
 		(uuid "297c39b7-0b51-4f9f-ae26-f1e0f69daf42")
 	)
 	(label "sd cs"
-		(at 201.93 58.42 0)
+		(at 224.79 57.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13581,7 +13591,7 @@
 		(uuid "36947329-69c3-48b6-900b-5756d8048580")
 	)
 	(label "csx"
-		(at 181.61 101.6 0)
+		(at 187.96 129.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13591,7 +13601,7 @@
 		(uuid "42ffc43b-07db-4461-bc43-b5b4bee13a3e")
 	)
 	(label "pb14"
-		(at 251.46 139.7 0)
+		(at 251.46 133.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13601,7 +13611,7 @@
 		(uuid "45d49eb5-614b-428c-93dd-59342063ca84")
 	)
 	(label "USB_D-"
-		(at 170.18 78.74 0)
+		(at 180.34 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13611,7 +13621,7 @@
 		(uuid "48a255a5-d3cf-4e52-a3a1-ce274a9e7d35")
 	)
 	(label "swdio"
-		(at 170.18 83.82 0)
+		(at 231.14 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13631,7 +13641,7 @@
 		(uuid "4b742d81-5177-4d14-98ab-5fc4bad38b9f")
 	)
 	(label "swclk"
-		(at 170.18 86.36 0)
+		(at 231.14 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13681,7 +13691,7 @@
 		(uuid "6089528a-385c-4a85-a35d-0ab0646adacf")
 	)
 	(label "boot0"
-		(at 86.36 60.96 0)
+		(at 80.01 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13701,7 +13711,7 @@
 		(uuid "646490ef-6dd0-4c72-ac5f-cf63f9b4a959")
 	)
 	(label "sd clk"
-		(at 200.66 63.5 0)
+		(at 224.79 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13711,7 +13721,7 @@
 		(uuid "6eb1e9f1-3f77-41fa-ad51-14718ade0b5d")
 	)
 	(label "sd miso"
-		(at 189.23 104.14 0)
+		(at 220.98 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13741,7 +13751,7 @@
 		(uuid "8094211b-2e95-4e6c-bba0-b569e0f092d3")
 	)
 	(label "rrst"
-		(at 107.95 116.84 0)
+		(at 106.68 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13751,7 +13761,7 @@
 		(uuid "815fc9f3-61ef-455f-9a01-8cc1f7eba211")
 	)
 	(label "scl"
-		(at 208.28 110.49 0)
+		(at 218.44 127 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13771,7 +13781,7 @@
 		(uuid "83b58a92-6e35-4e67-b37f-dafae5865571")
 	)
 	(label "href"
-		(at 109.22 96.52 0)
+		(at 107.95 96.52 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13801,7 +13811,7 @@
 		(uuid "a3b8dac5-e04f-4074-8520-e768c288048e")
 	)
 	(label "pa15"
-		(at 237.49 100.33 0)
+		(at 250.19 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13841,7 +13851,7 @@
 		(uuid "a9d951e9-b79d-4115-89dd-460a873b8b07")
 	)
 	(label "I2C_SCL"
-		(at 86.36 93.98 0)
+		(at 82.55 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13861,7 +13871,7 @@
 		(uuid "b2e7eca3-ad7e-4a45-9e04-f8b4cf5f12df")
 	)
 	(label "rst"
-		(at 198.12 99.06 0)
+		(at 218.44 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13871,7 +13881,7 @@
 		(uuid "b3dd3781-7c88-4803-8f3b-4c0d4e3b2a55")
 	)
 	(label "wr"
-		(at 90.17 120.65 0)
+		(at 90.17 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13901,7 +13911,7 @@
 		(uuid "b7caa60f-7b2f-4114-ac56-e3313fab41d6")
 	)
 	(label "uart tx"
-		(at 179.07 50.8 0)
+		(at 180.34 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13911,7 +13921,7 @@
 		(uuid "c3ba3bc0-5c22-4bc5-942a-6a8c07f3305d")
 	)
 	(label "wrst"
-		(at 102.87 119.38 0)
+		(at 92.71 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13931,7 +13941,7 @@
 		(uuid "c9663a32-eeb4-4863-9c77-175859dd2005")
 	)
 	(label "sda"
-		(at 184.15 127 0)
+		(at 187.96 127 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13940,7 +13950,7 @@
 		)
 		(uuid "d92f4f46-bdd6-47db-b924-68f85d252320")
 	)
-	(label "Backlight Regulátor"
+	(label "Backlight Regulátor en"
 		(at -60.96 158.75 0)
 		(effects
 			(font
@@ -13951,7 +13961,7 @@
 		(uuid "de93f9d6-be9f-4bab-869c-85e10246a709")
 	)
 	(label "I2C_SDA"
-		(at 109.22 93.98 0)
+		(at 107.95 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13971,7 +13981,7 @@
 		(uuid "e2e531e7-8016-4d95-8d80-5def9ef877c9")
 	)
 	(label "Reset"
-		(at 123.19 50.8 0)
+		(at 111.76 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13981,7 +13991,7 @@
 		(uuid "e777b083-6b39-4e87-9bed-7e0b36f038d6")
 	)
 	(label "pb0"
-		(at 240.03 104.14 0)
+		(at 251.46 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13991,7 +14001,7 @@
 		(uuid "e7df39ab-30f6-49c3-ba9c-67bb312e60a2")
 	)
 	(label "wrx d{slash}cx"
-		(at 190.5 107.95 0)
+		(at 219.71 129.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14031,7 +14041,7 @@
 		(uuid "f505a9cd-5899-4dbc-ac2e-076466bf6d8a")
 	)
 	(label "USB_D+"
-		(at 170.18 81.28 0)
+		(at 180.34 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14041,7 +14051,7 @@
 		(uuid "fae5ebc9-f223-426d-ad05-de68a706a310")
 	)
 	(label "sdo"
-		(at 189.23 152.4 0)
+		(at 219.71 132.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14656,7 +14666,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "135bab6e-d5d7-45ec-aa4f-51c02f182025")
 		(property "Reference" "#PWR023"
 			(at 114.3 91.44 0)
@@ -14668,7 +14677,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 111.76 91.4399 90)
+			(at 110.49 89.662 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19279,7 +19288,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 230.886 89.916 0)
+			(at 230.632 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20465,6 +20474,72 @@
 			(project ""
 				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
 					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at -36.83 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b397b401-c625-4321-b556-fcfaf4984895")
+		(property "Reference" "#FLG02"
+			(at -36.83 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at -36.83 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -36.83 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at -36.83 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at -36.83 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d88f5cec-0003-4b47-804b-457df681e431")
+		)
+		(instances
+			(project ""
+				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
