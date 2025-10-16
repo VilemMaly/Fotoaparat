@@ -1,8 +1,0 @@
-Zpráva ERC (2025-10-08T22:08:42+0200, kódování UTF8)
-
-***** List /
-[power_pin_not_driven]: Vývod vstupního napájení není řízen žádným vývodem výstupního napájení
-    ; error
-    @(4300 mils, 1050 mils): Symbol #PWR02 Vývod 1 [Vstup napájení, Čára]
-
- ** ERC zprávy: 1 chyb 1 výstrahy 0
