@@ -1,5 +1,5 @@
 Drill report for fotoaparat.kicad_pcb
-Created on 2025-10-16T22:25:14+0200
+Created on 2025-10-18T23:42:50+0200
 
 Copper Layer Stackup:
     =============================================================
@@ -7,23 +7,24 @@ Copper Layer Stackup:
     L2 :  B.Cu                      back
 
 
-Drill file 'fotoaparat-PTH.drl' contains
+Drill file 'fotoaparat.drl' contains
     plated through holes:
     =============================================================
-    T1  0,300mm  0,0118"  (172 holes)
+    T1  0,300mm  0,0118"  (171 holes)
     T2  0,650mm  0,0256"  (2 holes)
-    T3  1,000mm  0,0394"  (49 holes)
-    T4  1,050mm  0,0413"  (12 holes)
-    T5  1,500mm  0,0591"  (4 holes)
+    T3  0,800mm  0,0315"  (2 holes)
+    T4  1,000mm  0,0394"  (49 holes)
+    T5  1,050mm  0,0413"  (12 holes)
+    T6  1,500mm  0,0591"  (4 holes)
 
-    Total plated holes count 239
+    Total plated holes count 240
 
 
-Drill file 'fotoaparat-NPTH.drl' contains
+Not plated through holes are merged with plated holes
     unplated through holes:
     =============================================================
-    T1  1,092mm  0,0430"  (1 hole)
-    T2  1,600mm  0,0630"  (1 hole)
-    T3  3,200mm  0,1260"  (4 holes)
+    T7  1,092mm  0,0430"  (1 hole)
+    T8  1,600mm  0,0630"  (1 hole)
+    T9  3,200mm  0,1260"  (4 holes)
 
     Total unplated holes count 6
