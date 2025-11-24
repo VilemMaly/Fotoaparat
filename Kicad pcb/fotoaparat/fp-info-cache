@@ -1,4 +1,4 @@
-26727725105140265
+26734784557155839
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -92476,6 +92476,13 @@ TO-264-5 Vertical RM 3.81mm
 0
 5
 5
+Package_TO_SOT_THT
+Untitled
+
+
+0
+0
+0
 Panelization
 BreakLine_1h_D0.5mm_P0.85mm
 Break line, 1 hole/ 0.85mm
@@ -106399,3 +106406,24 @@ ov7670
 0
 22
 22
+resistorTHT
+thtRESISTOR
+
+
+0
+2
+2
+transistor
+npnTHT
+
+
+0
+3
+3
+txrx
+txrx
+
+
+0
+2
+2

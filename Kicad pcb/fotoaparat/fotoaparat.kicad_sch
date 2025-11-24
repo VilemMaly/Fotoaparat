@@ -896,6 +896,89 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Mosfet N:Mosfet_N"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4128,6 +4211,12 @@
 		(uuid "77046ac5-4ee6-4c2a-8ea6-7d6805a2b44d")
 	)
 	(junction
+		(at 262.89 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "98d87454-7618-4ae7-a8df-802212a29ed1")
+	)
+	(junction
 		(at 210.82 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4150,6 +4239,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aeba50d9-f5d5-4af0-93d1-34b18bf56063")
+	)
+	(junction
+		(at 210.82 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0f09fcb-387a-4031-bd1b-98a393f78556")
 	)
 	(junction
 		(at 175.26 72.39)
@@ -4192,6 +4287,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d811fe24-e227-46c7-b61a-f1e073ce7c9b")
+	)
+	(junction
+		(at 264.16 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "db8c56b7-94d2-4df5-aed0-fe4618cb12a4")
 	)
 	(junction
 		(at 181.61 149.86)
@@ -4438,6 +4539,16 @@
 			(type default)
 		)
 		(uuid "0dbc608b-e897-44a3-a404-76d96e374336")
+	)
+	(wire
+		(pts
+			(xy 256.54 148.59) (xy 262.89 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e07fb6b-f2cc-45df-94cd-5989db54cf85")
 	)
 	(wire
 		(pts
@@ -6261,6 +6372,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 102.87) (xy 264.16 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b73181ce-8a56-4157-95e1-b78412ede6ba")
+	)
+	(wire
+		(pts
 			(xy 204.47 80.01) (xy 187.96 80.01)
 		)
 		(stroke
@@ -6438,6 +6559,16 @@
 			(type default)
 		)
 		(uuid "cb4acdaf-6dd1-4ea6-b5ac-79b9c789656f")
+	)
+	(wire
+		(pts
+			(xy 204.47 149.86) (xy 210.82 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc9a1162-1996-4f2e-9754-095ae68005bd")
 	)
 	(wire
 		(pts
@@ -7259,7 +7390,7 @@
 		)
 		(uuid "9b4f887a-f093-4f4b-a784-bbc72c433b43")
 	)
-	(label "pow hold"
+	(label "pow hold mcu"
 		(at 97.79 71.12 0)
 		(effects
 			(font
@@ -7724,7 +7855,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "resistorTHT:thtRESISTOR"
 			(at 238.252 43.18 90)
 			(effects
 				(font
@@ -7831,6 +7962,70 @@
 			(project ""
 				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 57.15 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "141bd9e3-eb68-4a9d-a1fe-d4764008b127")
+		(property "Reference" "H3"
+			(at 59.69 142.2399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 59.69 144.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 57.15 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 57.15 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "fotoaparat"
+				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -8066,7 +8261,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "resistorTHT:thtRESISTOR"
 			(at 173.482 62.23 90)
 			(effects
 				(font
@@ -8345,7 +8540,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "resistorTHT:thtRESISTOR"
 			(at 74.168 78.74 90)
 			(effects
 				(font
@@ -8875,7 +9070,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical"
+		(property "Footprint" "txrx:txrx"
 			(at 86.36 76.2 0)
 			(effects
 				(font
@@ -8912,6 +9107,70 @@
 			(project ""
 				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 63.5 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "45b5a0cd-446f-42c9-ae85-c2dc5dd92f46")
+		(property "Reference" "H4"
+			(at 66.04 142.2399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 66.04 144.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 63.5 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 63.5 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "fotoaparat"
+				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -9141,7 +9400,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "resistorTHT:thtRESISTOR"
 			(at 66.04 66.548 90)
 			(effects
 				(font
@@ -9352,7 +9611,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "transistor:npnTHT"
 			(at 86.36 28.575 0)
 			(effects
 				(font
@@ -9608,7 +9867,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "resistorTHT:thtRESISTOR"
 			(at 77.47 37.338 90)
 			(effects
 				(font
@@ -9742,7 +10001,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "resistorTHT:thtRESISTOR"
 			(at 156.21 123.698 90)
 			(effects
 				(font
@@ -9983,6 +10242,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 63.5 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "71d768f0-f5e8-4310-aa87-b7818cbb3d81")
+		(property "Reference" "H2"
+			(at 66.04 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 66.04 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 63.5 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 63.5 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "fotoaparat"
+				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 232.41 60.96 0)
 		(unit 1)
@@ -10010,7 +10333,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "resistorTHT:thtRESISTOR"
 			(at 230.632 60.96 90)
 			(effects
 				(font
@@ -10080,7 +10403,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "resistorTHT:thtRESISTOR"
 			(at 102.108 30.48 90)
 			(effects
 				(font
@@ -10147,7 +10470,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "resistorTHT:thtRESISTOR"
 			(at 81.28 72.898 90)
 			(effects
 				(font
@@ -10940,7 +11263,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "transistor:npnTHT"
 			(at 59.69 80.645 0)
 			(effects
 				(font
@@ -11087,7 +11410,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+		(property "Footprint" "txrx:txrx"
 			(at 210.82 54.61 0)
 			(effects
 				(font
@@ -11360,7 +11683,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "transistor:npnTHT"
 			(at 185.42 57.785 0)
 			(effects
 				(font
@@ -11502,7 +11825,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "resistorTHT:thtRESISTOR"
 			(at 181.102 44.45 90)
 			(effects
 				(font
@@ -11957,6 +12280,69 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 57.15 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "cbd7edab-137e-4063-8002-e0537ccebcbb")
+		(property "Reference" "H1"
+			(at 59.69 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 57.15 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 57.15 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 57.15 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/af31909f-b2e8-4f24-bd61-08599f2fc290"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 144.78 88.9 0)
 		(unit 1)
@@ -12118,7 +12504,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "resistorTHT:thtRESISTOR"
 			(at 167.64 123.698 90)
 			(effects
 				(font
@@ -12188,7 +12574,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "transistor:npnTHT"
 			(at 242.57 56.515 0)
 			(effects
 				(font
@@ -12310,7 +12696,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d6d6fff9-d56a-4db8-a3b3-d0fef92faf62")
 		(property "Reference" "U8"
 			(at 194.31 132.08 0)
@@ -12671,7 +13056,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "resistorTHT:thtRESISTOR"
 			(at 60.452 92.71 90)
 			(effects
 				(font
