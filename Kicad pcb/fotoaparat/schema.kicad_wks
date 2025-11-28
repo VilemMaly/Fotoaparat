@@ -420,13 +420,6 @@
 		(start 52.989 166.0022)
 		(end 55.489 168.0022)
 	)
-	(tbtext "Pulsující signál"
-		(name "")
-		(pos 231.989 183.0022)
-		(font
-			(size 1.27 1.27)
-		)
-	)
 	(line
 		(name "")
 		(start 267.489 194.5022)
@@ -446,9 +439,9 @@
 		(name "")
 		(pos 270.489 195.5022)
 	)
-	(tbtext "Tlačítka gpio a joystick"
+	(tbtext "Tlačítka gpio"
 		(name "")
-		(pos 336.489 173.002)
+		(pos 325.989 172.5022)
 		(font
 			(size 2.54 2.54)
 		)
