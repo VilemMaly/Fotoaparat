@@ -1,4 +1,4 @@
-(pcb freerouting.dsn
+(pcb "B:\Dokumenty\GitHub\Fotoaparat\Kicad pcb\fotoaparat\temp-freerouting.dsn"
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)

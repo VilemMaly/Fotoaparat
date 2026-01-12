@@ -3,11 +3,11 @@
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(property "Reference" "REF**"
+	(property "Reference" "Q2"
 		(at 0 -0.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "f89303d0-c2b6-4360-b873-b30ce571a288")
+		(uuid "a3d3fd47-68b1-4aac-b87f-4ca515b075db")
 		(effects
 			(font
 				(size 1 1)
@@ -15,12 +15,12 @@
 			)
 		)
 	)
-	(property "Value" "npnTHT"
+	(property "Value" "BC547"
 		(at 0 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "d607f4bc-d9be-4140-b8ef-19ca900af4cc")
+		(uuid "06b82ad9-8e16-4eb8-baf3-23202735df58")
 		(effects
 			(font
 				(size 1 1)
@@ -28,12 +28,12 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
+	(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "fe1dad8b-4074-486f-8022-6c56802d89cb")
+		(uuid "f250359f-ef2d-40d0-b7f3-c48580dbb7b0")
 		(effects
 			(font
 				(size 1 1)
@@ -41,12 +41,12 @@
 			)
 		)
 	)
-	(property "Description" ""
+	(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "9bd2896a-4222-4cda-a201-d415fbd8bb06")
+		(uuid "5ba06ec4-db14-4afe-8958-1a9b3602cc7a")
 		(effects
 			(font
 				(size 1 1)
@@ -63,7 +63,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "f61b9eb7-040a-4049-a8ff-96663e7a4dc0")
+		(uuid "1c7a84e6-dc2d-4810-b22b-2cca061eb6fd")
 	)
 	(fp_arc
 		(start -1.838478 0.318478)
@@ -74,7 +74,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "2f8dcfe8-1ca5-4a77-b4f1-cb86d56c8a7d")
+		(uuid "624a2388-c98b-4a5e-80a9-704afd89319f")
 	)
 	(fp_arc
 		(start 0 -4.12)
@@ -85,7 +85,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "32158aa8-f31b-4a23-8d69-0aef434a20f7")
+		(uuid "8bc0acf2-2726-4bd7-9953-cefa38da9807")
 	)
 	(fp_line
 		(start -2.73 -4.25)
@@ -95,7 +95,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "12ff0bca-633f-48af-b81f-0acfefe2c496")
+		(uuid "9f95c07e-3bbe-4aa2-b6c6-0913a889fdde")
 	)
 	(fp_line
 		(start -2.73 -4.25)
@@ -105,7 +105,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "e66e480f-43fa-4d98-bafc-471dd3ec6bcc")
+		(uuid "e924a894-bcf3-49da-8002-4242f204076b")
 	)
 	(fp_line
 		(start 2.73 0.49)
@@ -115,7 +115,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "7f4ab4c5-d361-4f35-9afe-7cce08a039b7")
+		(uuid "8d9ab9cd-71bd-40a7-8f9b-376cced2f944")
 	)
 	(fp_line
 		(start 2.73 0.49)
@@ -125,7 +125,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "ef755121-ab2a-469a-9a70-491d2eee601d")
+		(uuid "9d2c9271-1b02-40e5-b788-5a16866d629d")
 	)
 	(fp_line
 		(start -1.77 0.23)
@@ -135,7 +135,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "6fa9f67f-cc5c-4934-9ae3-5696205fcfab")
+		(uuid "d0bcf165-281e-41ba-9645-51e7ee2f1c7d")
 	)
 	(fp_arc
 		(start -1.753625 0.233625)
@@ -146,7 +146,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "05ca2888-a70b-48d0-96f7-6f2ab070fa07")
+		(uuid "390e395b-20e2-4040-b203-f145f5dde95d")
 	)
 	(fp_arc
 		(start 0 -4)
@@ -157,12 +157,12 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "5f9e0c57-3643-4c60-bfea-b5ca96f7f368")
+		(uuid "47df7b9c-5fb5-42cc-8fa7-2ec71e9a3180")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 -1.52 0)
+		(at 0 -1.52 180)
 		(layer "F.Fab")
-		(uuid "3d1e48b0-aad1-4cba-a8d8-e9adffd46984")
+		(uuid "61b4b5ad-0c88-470f-8acc-b5d35ebf9ef4")
 		(effects
 			(font
 				(size 1 1)
@@ -171,14 +171,14 @@
 		)
 	)
 	(pad "1" thru_hole rect
-		(at -2.8 -1.5)
+		(at -3.8 -1.5)
 		(size 2.4 2.4)
 		(drill 0.8
 			(offset -0.0623 0)
 		)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "5aa7e7f8-b630-478d-a9ba-3a90ea492e5b")
+		(uuid "dbf2d5fc-2419-4166-a4ff-0d28f4f57630")
 	)
 	(pad "2" thru_hole oval
 		(at 0 -1.52)
@@ -186,15 +186,15 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "ee30858c-8a2e-484f-9c28-07e397a5a7b9")
+		(uuid "d8c27321-c3b4-4ba7-9626-d5ed744a7b51")
 	)
 	(pad "3" thru_hole oval
-		(at 2.8 -1.5)
+		(at 3.8 -1.5)
 		(size 2.4 2.4)
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "514c551f-c87e-45f1-acd0-5a52426f6739")
+		(uuid "b7549281-b266-4d7a-884c-b9f2e6ae5dea")
 	)
 	(embedded_fonts no)
 )

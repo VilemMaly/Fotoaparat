@@ -1,4 +1,4 @@
-26734788950219829
+26738337345329224
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -6313,6 +6313,13 @@ CP Radial series Radial pin pitch 5.00mm diameter 19mm supercapacitor
 0
 2
 2
+Capacitor_THT
+Untitled
+
+
+0
+0
+0
 Capacitor_Tantalum_SMD
 CP_EIA-1608-08_AVX-J
 Tantalum Capacitor SMD AVX-J (1608-08 Metric), IPC-7352 nominal, (Body size from: https://www.vishay.com/docs/48064/_t58_vmn_pt0471_1601.pdf), generated with kicad-footprint-generator
@@ -106396,6 +106403,13 @@ Varistor
 Varistor_Panasonic_VF
 Panasonic VF series varistor, 6x8mm body, 3.2mm height, https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/cdbs/www-data/pdf/AWA0000/AWA0000C4.pdf
 Varistor VF
+0
+2
+2
+kondenzator
+kondenzator
+
+
 0
 2
 2
