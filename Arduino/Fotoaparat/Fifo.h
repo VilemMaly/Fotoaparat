@@ -43,21 +43,27 @@ class Fifo
 
   static void inline writeEnable()
   {
-      digitalWrite(WR, 0);
+      //Set A2, A12, A13 (HIGH)
+      GPIOA->BRR = 0b0000000000000000 | (1 << WR); //lower 16 bits
+      //digitalWrite(WR, 0);
       delayMicroseconds(5);
   }
   
   static void inline writeDisable()
   {
-      digitalWrite(WR, 1);
+      GPIOA->BSRR = 0b0000000000000000 | (1 << WR); //lower 16 bits
+      //digitalWrite(WR, 1);
       delayMicroseconds(5);
   }
 
   static void inline writeReset()
   {
-      digitalWrite(WRST, 0);
+      GPIOA->BRR = 0b0000000000000000 | (1 << 9); //lower 16 bits
+      //digitalWrite(WRST, 0);
       delayMicroseconds(1);
-      digitalWrite(WRST, 1);
+      GPIOA->BSRR = 0b0000000000000000 | (1 << 9); //lower 16 bits
+      
+      //digitalWrite(WRST, 1);
   }
 
 static inline uint8_t readByte()

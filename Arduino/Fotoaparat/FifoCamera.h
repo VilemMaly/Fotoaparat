@@ -3,6 +3,8 @@
 #include "spiCS.h"
 #include "piny.h"
 #include "I2C.h"
+#include "SDkarta.h"
+#define VSYNCSTATUS() (GPIOB->IDR >> 5) & 1
 
 template<int RRST, int WRST, int RCK, int WR, int D0, int D1, int D2, int D3, int D4, int D5, int D6, int D7>
 class FifoCamera
@@ -18,6 +20,7 @@ class FifoCamera
   static const int REG_COM5 = 0x0e;
   static const int REG_COM6 = 0x0f;
   static const int REG_AECH = 0x10;
+  static const int REG_AECHH = 0x7;
   static const int REG_CLKRC = 0x11;
   static const int REG_COM7 = 0x12;
     static const int COM7_RGB = 0x04;
@@ -91,11 +94,53 @@ class FifoCamera
 
   OV7670_I2C& i2c;  // Reference místo objektu!
 
+  SDkarta& sd;
+
 public:
 
-  FifoCamera(OV7670_I2C& i2cRef)
-    : i2c(i2cRef)
+  FifoCamera(OV7670_I2C& i2cRef, SDkarta& sd)
+    : i2c(i2cRef), sd(sd)
   {
+
+
+  }
+
+  void loadSettings()
+  {
+    if(sd.readSetting("grbg",0) == 1) grbg();
+    else QVGARGB565();
+    denoise(sd.readSetting("denoise",3) );
+    lensCorrection(sd.readSetting("correction",3) );
+    fps(map(sd.readSetting("clk", 16), 0, 100, 0, 31));
+    expozice(map(sd.readSetting("expozice", 16), 0, 100, 0, 160000), sd.readSetting("aec", 0), sd.readSetting("agc", 0), sd.readSetting("awb", 0));
+    gain(map(sd.readSetting("gain", 0), 0,100, 0,254));
+    
+    i2c.writeRegister(ADDR, 0x7A, 0x20);
+    i2c.writeRegister(ADDR, 0x7B, 0x10);
+    i2c.writeRegister(ADDR, 0x7C, 0x1E);
+    i2c.writeRegister(ADDR, 0x7D, 0x35);
+    i2c.writeRegister(ADDR, 0x7E, 0x5A);
+    i2c.writeRegister(ADDR, 0x7F, 0x69);
+    i2c.writeRegister(ADDR, 0x80, 0x76);
+    i2c.writeRegister(ADDR, 0x81, 0x80);
+    i2c.writeRegister(ADDR, 0x82, 0x88);
+    i2c.writeRegister(ADDR, 0x83, 0x8F);
+    i2c.writeRegister(ADDR, 0x84, 0x96);
+    i2c.writeRegister(ADDR, 0x85, 0xA3);
+    i2c.writeRegister(ADDR, 0x86, 0xAF);
+    i2c.writeRegister(ADDR, 0x87, 0xC4);
+    i2c.writeRegister(ADDR, 0x88, 0xD7);
+    i2c.writeRegister(ADDR, 0x89, 0xE8);
+/*
+    i2c.writeRegister(ADDR, 0x4F, 0x80);
+    i2c.writeRegister(ADDR, 0x50, 0x80);
+    i2c.writeRegister(ADDR, 0x51, 0x0C);
+
+    i2c.writeRegister(ADDR, 0x52, 0x22);
+    i2c.writeRegister(ADDR, 0x53, 0x5E);
+    i2c.writeRegister(ADDR, 0x54, 0x80);
+
+    i2c.writeRegister(ADDR, 0x58, 0x9E);*/
 
 
   }
@@ -173,6 +218,110 @@ void BinToSD(
     }
 
     sd.close();
+}
+
+void YUVtoSD(
+    const char* filename,
+    int XRES,
+    int YRES,
+    int pixelByte,
+    SDkarta& sd
+) {
+    const uint32_t totalBytes =
+        (uint32_t)XRES * YRES * pixelByte;
+
+    uint32_t remaining = totalBytes;
+    uint8_t buffer[512];
+    uint16_t chunk = 512;
+
+    fifo.readReset();
+
+    if (!sd.openWrite(filename)) {
+        Serial3.println("SD open failed");
+        return;
+    }
+
+    // synchronizace snímku
+    while(VSYNCSTATUS());
+
+    // čekej na začátek frame
+    while(!VSYNCSTATUS());
+
+    // připrav FIFO (RST)
+    prepareCapture();
+
+    // začni zapisovat
+    startCapture();
+
+    // čekej na konec frame
+    while(VSYNCSTATUS());
+
+    // zastav zápis
+    stopCapture();
+
+    // zápis dat
+    while (remaining > 0) {
+
+        for (uint16_t i = 0; i < chunk; i++) {
+            buffer[i] = fifo.readByte();
+            //fifo.readByte();
+        }
+
+        sd.write(buffer, chunk);
+
+        remaining -= chunk;
+    }
+
+    sd.close();
+}
+
+void YUVToSD(
+    int XRES,
+    int YRES,
+    int pixelByte,
+    SDkarta& sd
+) {
+    const uint32_t totalBytes =
+        (uint32_t)XRES * YRES * pixelByte;
+
+    uint32_t remaining = totalBytes;
+    uint8_t buffer[10240];
+    uint16_t chunk = 10240;
+
+    spiSD();
+
+    fifo.readReset();
+
+        // synchronizace snímku
+    while(VSYNCSTATUS());
+
+    // čekej na začátek frame
+    while(!VSYNCSTATUS());
+
+    // připrav FIFO (RST)
+    prepareCapture();
+
+    // začni zapisovat
+    startCapture();
+
+    // čekej na konec frame
+    while(VSYNCSTATUS());
+
+    // zastav zápis
+    stopCapture();
+
+    // zápis dat
+    while (remaining > 0) {
+
+        for (uint16_t i = 0; i < chunk; i++) {
+            buffer[i] = fifo.readByte();
+        }
+
+        sd.write(buffer, chunk);
+
+        remaining -= chunk;
+    }
+
 }
 
 
@@ -314,7 +463,7 @@ void testFifo(int XRES, int YRES)
     i2c.writeRegister(ADDR, SCALING_DCWCTR, 0x33); //downsample by 8
     i2c.writeRegister(ADDR, SCALING_PCLK_DIV, 0xf3); //pixel clock divided by 8
   }
-
+  
   void QVGA()
   {
     //320x240 60fps(1/2)
@@ -327,9 +476,6 @@ void testFifo(int XRES, int YRES)
     i2c.writeRegister(ADDR, REG_SCALING_PCLK_DELAY, 0x02);
 
     //nightMode();
-    fps();
-    lensCorrection();
-    denoise();
   }
 
   void nightMode()
@@ -338,10 +484,44 @@ void testFifo(int XRES, int YRES)
     i2c.writeRegister(ADDR, REG_COM11, 0b11101010);
   }
 
-  void fps()
+  void yuv()
+  {
+    i2c.writeRegister(ADDR, REG_COM13, 0b00000000);
+    i2c.writeRegister(ADDR, REG_TSLB, 0b1000); //sequence UYVY
+    i2c.writeRegister(ADDR, REG_COM7, 0x0);
+    i2c.writeRegister(ADDR, REG_COM15, 0b11000000);
+  }
+  void rgb()
+  {
+    i2c.writeRegister(ADDR, REG_COM13, 0b00011001);
+    i2c.writeRegister(ADDR, REG_TSLB, 0b100);
+    i2c.writeRegister(ADDR, REG_COM7, 0b100); //RGB
+    i2c.writeRegister(ADDR, REG_COM15, 0b11000000 | 0b010000); //RGB565
+  }
+
+  void expozice(int velikost, uint8_t aec, uint8_t agc, uint8_t awb)
+  {
+    uint8_t Expozice = velikost;
+    i2c.writeRegister(ADDR, REG_COM8, 0b00000000 | aec | agc | awb);
+
+    i2c.writeRegister(ADDR, REG_COM1, Expozice & 0b11);
+
+    i2c.writeRegister(ADDR, REG_AECH, (Expozice & 0b1111111100) >> 2);
+
+    i2c.writeRegister(ADDR, REG_AECHH, (Expozice & 0b1111110000000000) >> 10);
+/*
+    i2c.writeRegister(ADDR, REG_AEW, Expozice-1);
+    i2c.writeRegister(ADDR, REG_AEB, Expozice-3);*/
+  }
+
+  void gain(int Gain)
+  {
+    i2c.writeRegister(ADDR, REG_GAIN, Gain);
+  }
+  void fps(int clk)
   {
 
-    i2c.writeRegister(ADDR, REG_CLKRC, 0b0010011);
+    i2c.writeRegister(ADDR, REG_CLKRC, clk);  // 3 + 16 = 19 cca 1 fps max 32
     i2c.writeRegister(ADDR, 0x6b, 0b11001010);
     i2c.writeRegister(ADDR, 0x2a, 0x00);
     i2c.writeRegister(ADDR, 0x2b, 0x00);
@@ -351,22 +531,22 @@ void testFifo(int XRES, int YRES)
 
   }
 
-  void lensCorrection()
+  void lensCorrection(int circle)
   {
 
     i2c.writeRegister(ADDR, REG_LCC4, 0b00000010);
     i2c.writeRegister(ADDR, REG_LCC5, 0b00000001);
-    i2c.writeRegister(ADDR, REG_LCC3, 0b00000100);
+    i2c.writeRegister(ADDR, REG_LCC3, circle);
 
   }
 
-  void denoise()
+  void denoise(int howmuch)
   {
     i2c.writeRegister(ADDR, REG_COM16, 0b00011000);
-    i2c.writeRegister(ADDR, 0x77, 0b00000110);
+    i2c.writeRegister(ADDR, 0x77, howmuch);
   }
 
-  void grb()
+  void grbg()
   {
     i2c.writeRegister(ADDR, REG_COM7, 0b100); //GRGB
     i2c.writeRegister(ADDR, REG_COM15, 0b11000000);

@@ -3,34 +3,60 @@
 
 #include "piny.h"
 
+#define tftHIGH() GPIOB->BSRR = 0b1 << 10;
+#define tftLOW() GPIOB->BRR = 0b1 << 10;
+
+#define sdHIGH() GPIOA->BSRR = 0b1 << 11;
+#define sdLOW() GPIOA->BRR = 0b1 << 11;
+
+#define touchHIGH() GPIOB->BSRR = 0b1;
+#define touchLOW() GPIOB->BRR = 0b1;
+
 // Funkce pro kontrolu CS pinů pomocí Arduino API
 
 inline void spiAllHigh() {
     // Nastaví všechny CS piny do HIGH (neaktivní)
+    tftHIGH();
+    sdHIGH();
+    touchHIGH();
+    /*
     digitalWrite(TFT_CS, HIGH);
     digitalWrite(SD_CS, HIGH);
-    digitalWrite(TOUCH_CS, HIGH);
+    digitalWrite(TOUCH_CS, HIGH);*/
 }
 
 inline void spiTFT() {
     // Nastaví TFT_CS na LOW (aktivní), ostatní HIGH
+    tftLOW();
+    sdHIGH();
+    touchHIGH();
+    /*
     digitalWrite(SD_CS, HIGH);
     digitalWrite(TOUCH_CS, HIGH);
     digitalWrite(TFT_CS, LOW);
+    */
 }
 
 inline void spiSD() {
     // Nastaví SD_CS na LOW (aktivní), ostatní HIGH
+    tftHIGH();
+    sdLOW();
+    touchHIGH();
+    /*
     digitalWrite(TFT_CS, HIGH);
     digitalWrite(TOUCH_CS, HIGH);
-    digitalWrite(SD_CS, LOW);
+    digitalWrite(SD_CS, LOW);*/
 }
 
 inline void spiTouch() {
     // Nastaví TOUCH_CS na LOW (aktivní), ostatní HIGH
+    tftHIGH();
+    sdHIGH();
+    touchLOW();
+    /*
     digitalWrite(TFT_CS, HIGH);
     digitalWrite(SD_CS, HIGH);
-    digitalWrite(TOUCH_CS, LOW);
+    digitalWrite(TOUCH_CS, LOW);*/
 }
 
 // Optimovaná verze s předpokladem, že piny jsou na stejném portu

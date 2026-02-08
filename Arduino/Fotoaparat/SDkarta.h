@@ -1,5 +1,6 @@
 #pragma once
 
+#include <ArduinoJson.h>
 #include <Arduino.h>
 #include <TFT_eSPI.h>
 #include <SPI.h>
@@ -7,6 +8,7 @@
 
 class SDkarta
 {
+    #define SD_BLOCK 10240   // 10 kB
 #pragma pack(push, 1)
 typedef struct {
     uint16_t signature;
@@ -83,21 +85,39 @@ struct BITMAPINFOHEADER_AVI {
 public:
     SDkarta(TFT_eSPI& tftref);
 
+        // JSON settings
+    bool writeSetting(const char* name, int value);
+    int  readSetting(const char* name, int defaultValue = -1);
+
+    void SDtoImage(const char* name);
+    void imageToSD(const char* name);
+    String getImages();
+    String getToken(const String& src, uint16_t index);
+
     bool begin();
 
     bool openWrite(const char* name);
     bool openRW(const char* name);
     void close();
+    void remove(const char* filename);
+    uint8_t bit_reverse(uint8_t x);
 
     void write512(const uint8_t* data);
     void writeb(uint8_t byte);
 
+    void DataFrame(int XRES, int YRES);
+    void AVIHeaderYUV(int XRES, int YRES, const char* name);
     void BMPHeaderRGB565(int XRES, int YRES);
     void BMPToSD(const String& name, int XRES, int YRES);
+    void BMPHeaderRGB24(int XRES, int YRES);
+    
 
-    void swapRGB565Bytes(const char* filename, size_t headerSkipBytes = 0);
+    void yuvToRGB(const char* filename, int xres, int yres);
+    void swapRGB565Bytes(const char* filename, size_t headerSkipBytes);
     void prehrajZvuk(const char* filename);
     void write(const uint8_t* data, size_t len);
+
+    void dbg(const char* msg, uint16_t y);
 
     bool binRGB565toAVI(
     const char* binName,
@@ -120,4 +140,6 @@ private:
 
     static constexpr uint16_t MAX_X = 320;
     static uint8_t rowBuffer[MAX_X * 8];
+
+    static constexpr const char* SETTINGS_FILE = "settings.json";
 };

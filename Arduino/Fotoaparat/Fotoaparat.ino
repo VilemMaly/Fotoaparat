@@ -6,76 +6,28 @@
 #include <XPT2046_Touchscreen.h>
 #include "piny.h"
 #include "I2C.h"
+#include "xpt.h"
+#include "menu.h"
+#include "I2C.h"
+#include "camera.h"
+#include "stm32f1xx_hal.h"
 
-
-// Initialize ILI9341 display with custom SPI and defined control pins
 TFT_eSPI tft = TFT_eSPI(); // Vytvoření objektu
 
 XPT2046_Touchscreen touch(TOUCH_CS, TOUCH_IRQ);
 
 HardwareSerial Serial3(PA3, PA2); // RX, TX
 
-#include "I2C.h"
-#include "FifoCamera.h"
-
-const int VSYNC = PB5;   // vsync
-const int SIOD  = PB7;   // siod (SDA)
-const int SIOC  = PB6;   // sioc (SCL)
-
-
-const int RCK  = PB14;   // read clock
-const int RRST = PB15;   // read reset
-const int WR   = PA10;   // write enable
-const int WRST = PA9;    // write reset
-
-//OE -> GND     (output enable always on since we control the read clock)
-//PWDN not nonnected  
-//HREF not connected
-//STR not connected
-//RST -> 3.3V 
-
-const int DAT0 = PB13;  // D0
-const int DAT1 = PA12;  // D1
-const int DAT2 = PB12;  // D2
-const int DAT3 = PA15;  // D3
-const int DAT4 = PB9;   // D4
-const int DAT5 = PB3;   // D5
-const int DAT6 = PB8;   // D6
-const int DAT7 = PB4;   // D7
-
 OV7670_I2C i2c(PB7, PB6);
-
-FifoCamera<RRST, WRST, RCK, WR, DAT0, DAT1, DAT2, DAT3, DAT4, DAT5, DAT6, DAT7> camera(i2c);
 
 SDkarta sdkarta(tft);
 
-//#define QQVGA
-//#define QQQVGA
-#define QVGA
-#ifdef QVGA
-const int XRES = 320;
-const int YRES = 240;
-#endif
+ov7670 camera(i2c, sdkarta);
 
-#ifdef QQVGA
-const int XRES = 160;
-const int YRES = 120;
-#endif
-#ifdef QQQVGA
-const int XRES = 80;
-const int YRES = 60;
-#endif
-
-const int BYTES_PER_PIXEL = 1;
-const int frameSize = XRES * YRES * BYTES_PER_PIXEL;
-//unsigned char frame[frameSize];
-unsigned char frame[1];
-#include "stm32f1xx_hal.h"
+xpt dotek = xpt(touch, sdkarta);
 
 void setup() 
 {
-  //digitalWrite(PA12, LOW);
-  //digitalWrite(PA9, HIGH);
   Serial3.begin(500000);
   Serial3.println("Initialization...");
 
@@ -85,20 +37,21 @@ void setup()
   MODIFY_REG(AFIO->MAPR, AFIO_MAPR_SWJ_CFG, AFIO_MAPR_SWJ_CFG_1);
 
   pinMode(PB11, OUTPUT);
+  pinMode(VSYNC, INPUT);
+  pinMode(TFT_CS, OUTPUT);
+  pinMode(SD_CS, OUTPUT);
+  pinMode(TOUCH_CS, OUTPUT);
+
   digitalWrite(PB11, LOW);   // PWDN = 0
   pinMode(TFT_RST, OUTPUT);
-  digitalWrite(TFT_RST, LOW);   // PWDN = 0
-  digitalWrite(TFT_RST, HIGH);   // PWDN = 0
-  digitalWrite(TFT_CS, HIGH);   // PWDN = 0
-  digitalWrite(TOUCH_CS, HIGH);   // PWDN = 0
-  digitalWrite(SD_CS, HIGH);   // PWDN = 0
-  delay(50);
+  digitalWrite(TFT_RST, LOW);
+  digitalWrite(TFT_RST, HIGH);
+  spiAllHigh();
+  delay(10);
+
   // zbytek setupu
-
-
   i2c.init();
-
-  //i2c.testOV7670();
+  //i2c.scan();
   
 
   camera.init();
@@ -109,101 +62,113 @@ void setup()
   #ifdef QQVGA
   camera.QQVGARGB565();
   #endif
-  //camera.QVGARGB565();
 
-  //camera.QQVGARGB565();
-  //camera.QQQVGARGB565();
-  //camera.QQVGAYUV();
   //camera.RGBRaw();
   //camera.testImage();
 
   Serial3.println( i2c.readRegister(0x12), HEX);
   Serial3.println( i2c.readRegister(0x71), HEX);
-  
-  pinMode(VSYNC, INPUT);
-  pinMode(TFT_CS, OUTPUT);
-  pinMode(SD_CS, OUTPUT);
-  pinMode(TOUCH_CS, OUTPUT);
+  Serial3.println("start");
 
-
-
-
-  //Serial3.println("start");
-  digitalWrite(TOUCH_CS, HIGH);
-  digitalWrite(SD_CS, HIGH);
+  spiTFT();
   delay(10);
   tft.init();
   tft.setSwapBytes(true);
   tft.setRotation(3);
   tft.fillScreen(0);
+
   delay(10);
-  digitalWrite(TFT_CS, HIGH);
+  spiTouch();
   touch.begin(tft.getSPIinstance());
   delay(10);
+
+  spiSD();
   sdkarta.begin();
+  delay(10);
+  
+  //dotek.autoCalibrate();
+  dotek.setCalibration();
 
   initBattery();
+
+  camera.loadSettings();
 
 }
 
 void loop() 
 {
   //frameToSerial3();
-  digitalWrite(TOUCH_CS, LOW);
-  digitalWrite(TFT_CS, LOW);
+  spiTouch();
   delay(10);
-  if (touch.touched()) {
+  int timePress = dotek.touchedMs(500);
+  if (timePress > 0 && timePress < 500) {
+    camera.yuv();
     tone(ZVUK, 2000, 100);
     //sdkarta.prehrajZvuk("shutter.raw");
 
     // Časovač pro SD operaci
-    spiAllHigh();
     unsigned long sdStart = millis();
-    //sdkarta.BMPToSD(String(millis()) + ".bmp", XRES, YRES);
-    String name = String(millis()) + "foto.bmp";
-    camera.BinToSD(name.c_str(), XRES, YRES, 4, sdkarta);
+    String name = String(millis()) + "yuv";
+
+    if(sdkarta.readSetting("rgb565", 0) == 1)
+    {
+      camera.BinToSD(String(name + "rgb565.bmp").c_str(), XRES, YRES, 2, sdkarta);
+    }
+    
+    camera.YUVtoSD(name.c_str(), XRES, YRES, 2, sdkarta);
     unsigned long sdDuration = millis() - sdStart;
+    if(sdkarta.readSetting("postProcessYUV", 0) == 1)
+    {
+      sdkarta.yuvToRGB(name.c_str(), XRES, YRES);
+      sdkarta.remove(name.c_str());
+    }
     //sdkarta.convertRGB565Endian(name.c_str(), 40);
     //sdkarta.swapRGB565Bytes(name.c_str(), 40);
     Serial3.println("SD trvala ");
     Serial3.print(sdDuration);
     Serial3.println(" ms");
-    spiTouch();
+    camera.rgb();
     
     //camera.FrameToSerial(Serial3, XRES, YRES);
 
   }
-  else
+  else if( timePress >= 500)
   {
+
+    menu Menu = menu(tft, dotek, sdkarta, camera);
+    Menu.enter();
+    camera.loadSettings();
+
+  }
+    spiTFT();
     showBattery();
-    digitalWrite(TOUCH_CS, HIGH);
-    digitalWrite(TFT_CS, LOW);
     unsigned long lcdStart = millis();
-    while(!digitalRead(VSYNC));
-    while(digitalRead(VSYNC));
+    // čekej na konec předchozího frame
+    while(VSYNCSTATUS());
+
+    // čekej na začátek frame
+    while(!VSYNCSTATUS());
+
+    // připrav FIFO (RST)
     camera.prepareCapture();
+
+    // začni zapisovat
     camera.startCapture();
-    while(!digitalRead(VSYNC));
+
+    // čekej na konec frame
+    while(VSYNCSTATUS());
+
+    // zastav zápis
     camera.stopCapture();
+
+    // teď čti FIFO
     camera.FrameToDisplay(tft, XRES, YRES);
+
     //camera.testFifo(XRES, YRES);
     unsigned long lcdDuration = millis() - lcdStart;
     Serial3.print("LCD trvala ");
     Serial3.print(lcdDuration);
     Serial3.println(" ms");
-
-  }
-
-  //camera.YuvToDisplay(&tft, XRES, YRES, &Serial3);
-  //camera.readFrame(frame, XRES, YRES, BYTES_PER_PIXEL);
-  //displayRGB565();
-  
-  //testTFT();
-  
-  //b/w 
-  //camera.readFrameOnlySecondByte(frame, XRES, YRES);
-  //displayRGB565();
-  //displayY8();
   
 }
 
