@@ -66,14 +66,16 @@ class Fifo
       //digitalWrite(WRST, 1);
   }
 
-static inline uint8_t readByte()
+static inline uint8_t readByte(uint8_t mode)
 {
   RCK_HIGH();
 
   uint32_t a = GPIOA->IDR;
   uint32_t b = GPIOB->IDR;
-
-  uint8_t v =
+  uint8_t v;
+  switch (mode) {
+  case 1:
+    v =
     ((b >> 13) & 1) |       // D0 PB13
     ((a >> 12) & 1) << 1 |  // D1 PA12
     ((b >> 12) & 1) << 2 |  // D2 PB12
@@ -82,12 +84,68 @@ static inline uint8_t readByte()
     ((b >>  3) & 1) << 5 |  // D5 PB3
     ((b >>  8) & 1) << 6 |  // D6 PB8
     ((b >>  4) & 1) << 7;   // D7 PB4
+    break;
+  case 2:
+    v =     
+    ((b >> 13) & 1) |       // D0 PB13
+    ((a >> 12) & 1) << 1 |  // D1 PA12
+    ((b >> 13) & 1) << 1 |       // D0 PB13
+    ((a >> 12) & 1) |  // D1 PA12
+    ((b >> 12) & 1) << 2 |  // D2 PB12
+    ((a >> 15) & 1) << 3 |  // D3 PA15
+    ((b >>  9) & 1) << 4 |  // D4 PB9
+    ((b >>  3) & 1) << 5 |  // D5 PB3
+    ((b >>  8) & 1) << 6 |  // D6 PB8
+    ((b >>  4) & 1) << 7;   // D7 PB4
+    break;
+  case 3:
+    v = 
+    ((b >> 13) & 1) |       // D0 PB13
+    ((a >> 12) & 1) << 1 |  // D1 PA12
+    ((b >> 12) & 1) << 2 |  // D2 PB12
+    ((a >> 15) & 1) << 3 |  // D3 PA15
+    ((b >> 12) & 1) << 3 |  // D2 PB12
+    ((a >> 15) & 1) << 2 |  // D3 PA15
+    ((b >>  9) & 1) << 4 |  // D4 PB9
+    ((b >>  3) & 1) << 5 |  // D5 PB3
+    ((b >>  8) & 1) << 6 |  // D6 PB8
+    ((b >>  4) & 1) << 7;   // D7 PB4
+    break;
+  case 4:
+    v = 
+    ((b >> 13) & 1) |       // D0 PB13
+    ((a >> 12) & 1) << 1 |  // D1 PA12
+    ((b >> 12) & 1) << 2 |  // D2 PB12
+    ((a >> 15) & 1) << 3 |  // D3 PA15
+    ((b >>  9) & 1) << 4 |  // D4 PB9
+    ((b >>  3) & 1) << 5 |  // D5 PB3
+    ((b >>  9) & 1) << 5 |  // D4 PB9
+    ((b >>  3) & 1) << 4 |  // D5 PB3
+    ((b >>  8) & 1) << 6 |  // D6 PB8
+    ((b >>  4) & 1) << 7;   // D7 PB4
+    break;
+  case 5:
+    v = 
+    ((b >> 13) & 1) |       // D0 PB13
+    ((a >> 12) & 1) << 1 |  // D1 PA12
+    ((b >> 12) & 1) << 2 |  // D2 PB12
+    ((a >> 15) & 1) << 3 |  // D3 PA15
+    ((b >>  9) & 1) << 4 |  // D4 PB9
+    ((b >>  3) & 1) << 5 |  // D5 PB3
+    ((b >>  8) & 1) << 6 |  // D6 PB8
+    ((b >>  4) & 1) << 7;   // D7 PB4
+    ((b >>  8) & 1) << 7 |  // D6 PB8
+    ((b >>  4) & 1) << 6;   // D7 PB4
+    break;
+
+  default:
+  v = 0;
+    break;
+}
 
   RCK_LOW();
   return v;
 }
-
-
 
   static void inline skipByte()
   {
@@ -96,10 +154,6 @@ static inline uint8_t readByte()
       digitalWrite(RCK, 0);
       digitalWrite(RCK, 0); //needed if more skips in sequence
   }
-  static void inline readBytes(unsigned char *buffer, int count)
-  {
-    for(int i = 0; i < count; i++)
-      buffer[i] = readByte();
-  }
+
 };
 

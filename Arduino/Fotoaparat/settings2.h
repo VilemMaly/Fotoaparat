@@ -23,6 +23,7 @@ private:
     Switch agc;
     Switch awb;
     slider Lens;
+    slider Glitch;
     SDkarta& sd;
     xpt& touch;
 };

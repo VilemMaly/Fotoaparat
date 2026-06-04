@@ -352,7 +352,7 @@ bool SDkarta::begin()
     SdSpiConfig cfg(
         SD_CS,
         SHARED_SPI,
-        SD_SCK_MHZ(35),
+        SD_SCK_MHZ(15),
         spi
     );
 

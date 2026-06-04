@@ -85,8 +85,10 @@ void setup()
   spiSD();
   sdkarta.begin();
   delay(10);
-  
-  //dotek.autoCalibrate();
+  if(sdkarta.readSetting("calibrate", 0) == 1)
+    {
+    dotek.autoCalibrate();
+    }
   dotek.setCalibration();
 
   initBattery();
@@ -221,6 +223,16 @@ void showBattery()
                  BATTERY_WIDTH - 2 * BATTERY_PADDING - 2,
                  BATTERY_HEIGHT - 2 * BATTERY_PADDING - 2,
                  fillColor);
+
+    tft.setTextColor(TFT_WHITE, fillColor);
+    tft.setTextDatum(MC_DATUM);
+    tft.setTextSize(2);     // ← použití velikosti textu
+
+    tft.drawString(
+        String(adcValue),
+        BATTERY_WIDTH - 2 * BATTERY_PADDING - 2,
+        BATTERY_HEIGHT - 2 * BATTERY_PADDING - 2
+    );
 }
 
 void initBattery()

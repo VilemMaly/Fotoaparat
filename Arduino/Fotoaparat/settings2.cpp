@@ -9,6 +9,7 @@ settings2::settings2(TFT_eSPI& tft, xpt& touch, SDkarta& sd)
       agc(tft, touch, 80, 40, TFT_GREEN, 60, 0, "AGC", 2),
       awb(tft, touch, 80, 40, TFT_BLUE, 60, 60, "AWB", 2),
       Lens(tft, touch, 80, 40, TFT_BLACK, 60, 120, "Lens", 2),
+      Glitch(tft, touch, 80, 40, TFT_BLACK, 160, 120, "Glitch", 2),
       sd(sd),
       touch(touch)
 {
@@ -30,6 +31,7 @@ void settings2::onDraw()
     awb.draw();
     Lens.draw();
     calibrate.draw();
+    Glitch.draw();
 }
 
 // Aktualizace logiky
@@ -51,6 +53,7 @@ void settings2::onUpdate()
     }
     agc.checkSwitch();
     Lens.checkSlider();
+    Glitch.checkSlider();
     awb.checkSwitch();
 }
 
@@ -67,6 +70,7 @@ void settings2::onExit()
         sd.writeSetting("awb", 0);
 
     sd.writeSetting("correction", Lens.checkSlider());
+    sd.writeSetting("mode", Glitch.checkSlider() / 10);
     tft.fillScreen(TFT_BLACK);
     delay(200);
 }

@@ -94,6 +94,8 @@ class FifoCamera
 
   OV7670_I2C& i2c;  // Reference místo objektu!
 
+  uint8_t mode = 1;
+
   SDkarta& sd;
 
 public:
@@ -114,6 +116,7 @@ public:
     fps(map(sd.readSetting("clk", 16), 0, 100, 0, 31));
     expozice(map(sd.readSetting("expozice", 16), 0, 100, 0, 160000), sd.readSetting("aec", 0), sd.readSetting("agc", 0), sd.readSetting("awb", 0));
     gain(map(sd.readSetting("gain", 0), 0,100, 0,254));
+    setMode(sd.readSetting("mode",1) );
     
     i2c.writeRegister(ADDR, 0x7A, 0x20);
     i2c.writeRegister(ADDR, 0x7B, 0x10);
@@ -153,6 +156,10 @@ public:
     i2c.writeRegister(ADDR, REG_COM7, 0x80);
   }
 
+  void setMode(uint8_t Mode)
+  {
+    mode = Mode;
+  }
   void testImage()
   {
     //i2c.writeRegister(ADDR, 0x70, 0x4A | 0x80);
@@ -209,7 +216,7 @@ void BinToSD(
     while (remaining > 0) {
 
         for (uint16_t i = 0; i < chunk; i++) {
-            buffer[i] = fifo.readByte();
+            buffer[i] = fifo.readByte(mode);
         }
 
         sd.write(buffer, chunk);
@@ -263,7 +270,7 @@ void YUVtoSD(
     while (remaining > 0) {
 
         for (uint16_t i = 0; i < chunk; i++) {
-            buffer[i] = fifo.readByte();
+            buffer[i] = fifo.readByte(mode);
             //fifo.readByte();
         }
 
@@ -314,7 +321,7 @@ void YUVToSD(
     while (remaining > 0) {
 
         for (uint16_t i = 0; i < chunk; i++) {
-            buffer[i] = fifo.readByte();
+            buffer[i] = fifo.readByte(mode);
         }
 
         sd.write(buffer, chunk);
@@ -357,8 +364,8 @@ void FrameToDisplay(TFT_eSPI& tft, int XRES, int YRES) {
         
         // Načti celý blok do bufferu
         for (int i = 0; i < BUFFER_LINES * XRES; i++) {
-            uint8_t low = fifo.readByte();
-            uint8_t high = fifo.readByte();
+            uint8_t low = fifo.readByte(mode);
+            uint8_t high = fifo.readByte(mode);
             frameBuffer[i] = (high << 8) | low;
         }
         
@@ -373,8 +380,8 @@ void FrameToDisplay(TFT_eSPI& tft, int XRES, int YRES) {
         
         // Načti zbývající řádky
         for (int i = 0; i < remainingLines * XRES; i++) {
-            uint8_t low = fifo.readByte();
-            uint8_t high = fifo.readByte();
+            uint8_t low = fifo.readByte(mode);
+            uint8_t high = fifo.readByte(mode);
             frameBuffer[i] = (high << 8) | low;
         }
         
@@ -390,8 +397,8 @@ void testFifo(int XRES, int YRES)
 {
 
     for (int pixels = XRES * YRES; pixels >= 0; pixels--) {
-      uint8_t low = fifo.readByte();
-      uint8_t high = fifo.readByte();
+      uint8_t low = fifo.readByte(mode);
+      uint8_t high = fifo.readByte(mode);
     }
 
 }
@@ -404,7 +411,7 @@ void testFifo(int XRES, int YRES)
     for(int y = 0; y < yres; y++)
       for(int x = 0; x < xres; x++)
         for(int b = 0; b < bytes; b++)        
-          frame[i++] = fifo.readByte();
+          frame[i++] = fifo.readByte(mode);
   }
 
   void inline readFrameOnlySecondByte(unsigned char *frame, const int xres, const int yres)
@@ -415,7 +422,7 @@ void testFifo(int XRES, int YRES)
       for(int x = 0; x < xres; x++)
       {
           fifo.skipByte();
-          frame[i++] = fifo.readByte();
+          frame[i++] = fifo.readByte(mode);
       }       
   }
   
