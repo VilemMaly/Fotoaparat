@@ -97,6 +97,7 @@ class FifoCamera
   uint8_t mode = 1;
 
   SDkarta& sd;
+  
 
 public:
 
@@ -508,7 +509,7 @@ void testFifo(int XRES, int YRES)
 
   void expozice(int velikost, uint8_t aec, uint8_t agc, uint8_t awb)
   {
-    uint8_t Expozice = velikost;
+    uint16_t Expozice = velikost;
     i2c.writeRegister(ADDR, REG_COM8, 0b00000000 | aec | agc | awb);
 
     i2c.writeRegister(ADDR, REG_COM1, Expozice & 0b11);

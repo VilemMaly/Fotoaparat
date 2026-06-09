@@ -24,6 +24,7 @@ private:
     Switch awb;
     slider Lens;
     slider Glitch;
+    slider Casosber;
     SDkarta& sd;
     xpt& touch;
 };

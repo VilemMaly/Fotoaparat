@@ -352,7 +352,7 @@ bool SDkarta::begin()
     SdSpiConfig cfg(
         SD_CS,
         SHARED_SPI,
-        SD_SCK_MHZ(15),
+        SD_SCK_MHZ(20),
         spi
     );
 
@@ -398,6 +398,17 @@ bool SDkarta::begin()
 void SDkarta::write(const uint8_t* data, size_t len)
 {
     file.write(data, len);
+}
+
+void SDkarta::flush()
+{
+    spiSD();
+
+    if (file) {
+        file.sync();
+    }
+
+    spiAllHigh();
 }
 
 bool SDkarta::openWrite(const char* name)

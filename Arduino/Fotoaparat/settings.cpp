@@ -8,7 +8,7 @@ settings::settings(TFT_eSPI& tft, xpt& touch, SDkarta& sd)
       next(tft, touch, 40, 240, TFT_BLUE, 280, 0, ">", 4),
       grbg(tft, touch, 80, 40, TFT_GREEN, 60, 0, "GRBG", 2),
       rgb(tft, touch, 80, 40, TFT_BLUE, 60, 60, "rgb565", 2),
-      jas(tft, touch, 80, 40, TFT_BLACK, 60, 120, "Jas", 2),
+      jas(tft, touch, 80, 40, TFT_BLACK, 60, 120, "Exp", 2),
       clk(tft, touch, 80, 40, TFT_BLACK, 160, 120, "clk", 2),
       sum(tft, touch, 80, 40, TFT_BLACK, 60, 170, "Sum", 2),
       gain(tft, touch, 120, 40, TFT_BLACK, 150, 170, "Gain", 2),

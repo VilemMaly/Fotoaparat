@@ -101,6 +101,7 @@ public:
     void close();
     void remove(const char* filename);
     uint8_t bit_reverse(uint8_t x);
+    void flush();
 
     void write512(const uint8_t* data);
     void writeb(uint8_t byte);
